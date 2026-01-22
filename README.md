@@ -2,7 +2,7 @@
 
 A comprehensive, ML-powered platform that transforms waste management into a strategic national resource for the UAE.
 
-## 🇦🇪 Vision
+## Vision
 Transform UAE waste from disposal challenge to energy opportunity through AI-driven optimization and policy simulation.
 
 ## 🔥 Core Features

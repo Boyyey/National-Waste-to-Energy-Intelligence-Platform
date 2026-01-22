@@ -1,0 +1,203 @@
+{
+  "emirates": {
+    "Abu Dhabi": {
+      "population_2024": 3789000,
+      "area_km2": 97200,
+      "gdp_per_capita": 117000,
+      "coordinates": [
+        24.4667,
+        54.3667
+      ]
+    },
+    "Dubai": {
+      "population_2024": 3660000,
+      "area_km2": 4110,
+      "gdp_per_capita": 44000,
+      "coordinates": [
+        25.2769,
+        55.2962
+      ]
+    },
+    "Sharjah": {
+      "population_2024": 1800000,
+      "area_km2": 2590,
+      "gdp_per_capita": 32000,
+      "coordinates": [
+        25.3714,
+        55.4064
+      ]
+    },
+    "Ajman": {
+      "population_2024": 504000,
+      "area_km2": 460,
+      "gdp_per_capita": 28000,
+      "coordinates": [
+        25.4181,
+        55.4444
+      ]
+    },
+    "Umm Al Quwain": {
+      "population_2024": 290000,
+      "area_km2": 720,
+      "gdp_per_capita": 26000,
+      "coordinates": [
+        25.5647,
+        55.5552
+      ]
+    },
+    "Ras Al Khaimah": {
+      "population_2024": 345000,
+      "area_km2": 1684,
+      "gdp_per_capita": 29000,
+      "coordinates": [
+        25.7895,
+        55.9432
+      ]
+    },
+    "Fujairah": {
+      "population_2024": 285000,
+      "area_km2": 1450,
+      "gdp_per_capita": 31000,
+      "coordinates": [
+        25.1164,
+        56.3215
+      ]
+    }
+  },
+  "real_waste_data": {
+    "Abu Dhabi": {
+      "daily_waste_tons": 11000,
+      "composition": {
+        "organic": 0.42,
+        "plastic": 0.16,
+        "paper": 0.14,
+        "metal": 0.08,
+        "glass": 0.06,
+        "textile": 0.05,
+        "construction": 0.07,
+        "hazardous": 0.02
+      },
+      "recycling_rate": 0.28,
+      "landfill_sites": [
+        "Al Ain landfill",
+        "Abu Dhabi landfill"
+      ],
+      "existing_wte_plants": [
+        "Abu Dhabi WTE Plant (100 MW)"
+      ]
+    },
+    "Dubai": {
+      "daily_waste_tons": 16000,
+      "composition": {
+        "organic": 0.35,
+        "plastic": 0.22,
+        "paper": 0.16,
+        "metal": 0.09,
+        "glass": 0.07,
+        "textile": 0.06,
+        "construction": 0.04,
+        "hazardous": 0.01
+      },
+      "recycling_rate": 0.41,
+      "landfill_sites": [
+        "Jebel Ali landfill",
+        "Al Qusais landfill"
+      ],
+      "existing_wte_plants": [
+        "Dubai WTE Plant (45 MW)"
+      ]
+    },
+    "Sharjah": {
+      "daily_waste_tons": 4500,
+      "composition": {
+        "organic": 0.4,
+        "plastic": 0.17,
+        "paper": 0.13,
+        "metal": 0.08,
+        "glass": 0.08,
+        "textile": 0.06,
+        "construction": 0.06,
+        "hazardous": 0.02
+      },
+      "recycling_rate": 0.35,
+      "landfill_sites": [
+        "Al Sajaa landfill"
+      ],
+      "existing_wte_plants": [
+        "Sharjah WTE Plant (30 MW)"
+      ]
+    },
+    "Ajman": {
+      "daily_waste_tons": 1200,
+      "composition": {
+        "organic": 0.36,
+        "plastic": 0.19,
+        "paper": 0.14,
+        "metal": 0.08,
+        "glass": 0.07,
+        "textile": 0.07,
+        "construction": 0.07,
+        "hazardous": 0.02
+      },
+      "recycling_rate": 0.22,
+      "landfill_sites": [
+        "Ajman landfill"
+      ],
+      "existing_wte_plants": []
+    },
+    "Umm Al Quwain": {
+      "daily_waste_tons": 800,
+      "composition": {
+        "organic": 0.35,
+        "plastic": 0.18,
+        "paper": 0.15,
+        "metal": 0.08,
+        "glass": 0.08,
+        "textile": 0.07,
+        "construction": 0.07,
+        "hazardous": 0.02
+      },
+      "recycling_rate": 0.18,
+      "landfill_sites": [
+        "UAQ landfill"
+      ],
+      "existing_wte_plants": []
+    },
+    "Ras Al Khaimah": {
+      "daily_waste_tons": 1500,
+      "composition": {
+        "organic": 0.37,
+        "plastic": 0.17,
+        "paper": 0.14,
+        "metal": 0.08,
+        "glass": 0.08,
+        "textile": 0.06,
+        "construction": 0.08,
+        "hazardous": 0.02
+      },
+      "recycling_rate": 0.25,
+      "landfill_sites": [
+        "RAK landfill"
+      ],
+      "existing_wte_plants": []
+    },
+    "Fujairah": {
+      "daily_waste_tons": 900,
+      "composition": {
+        "organic": 0.39,
+        "plastic": 0.16,
+        "paper": 0.13,
+        "metal": 0.08,
+        "glass": 0.08,
+        "textile": 0.06,
+        "construction": 0.08,
+        "hazardous": 0.02
+      },
+      "recycling_rate": 0.2,
+      "landfill_sites": [
+        "Fujairah landfill"
+      ],
+      "existing_wte_plants": []
+    }
+  }
+}

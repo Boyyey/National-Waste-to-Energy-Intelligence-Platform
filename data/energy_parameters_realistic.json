@@ -1,0 +1,95 @@
+{
+  "energy_yields": {
+    "incineration": {
+      "organic": 320,
+      "plastic": 750,
+      "paper": 420,
+      "metal": 45,
+      "glass": 25,
+      "textile": 380,
+      "construction": 180,
+      "hazardous": 550
+    },
+    "anaerobic_digestion": {
+      "organic": 140,
+      "plastic": 0,
+      "paper": 45,
+      "metal": 0,
+      "glass": 0,
+      "textile": 25,
+      "construction": 0,
+      "hazardous": 0
+    },
+    "gasification": {
+      "organic": 380,
+      "plastic": 850,
+      "paper": 480,
+      "metal": 90,
+      "glass": 45,
+      "textile": 430,
+      "construction": 280,
+      "hazardous": 650
+    }
+  },
+  "emission_factors": {
+    "landfill": {
+      "organic": 500,
+      "plastic": 200,
+      "paper": 300,
+      "metal": 50,
+      "glass": 30,
+      "textile": 250,
+      "construction": 100,
+      "hazardous": 400
+    },
+    "incineration": {
+      "organic": 300,
+      "plastic": 800,
+      "paper": 400,
+      "metal": 100,
+      "glass": 50,
+      "textile": 350,
+      "construction": 200,
+      "hazardous": 600
+    },
+    "anaerobic_digestion": {
+      "organic": 100,
+      "plastic": 0,
+      "paper": 100,
+      "metal": 20,
+      "glass": 10,
+      "textile": 80,
+      "construction": 50,
+      "hazardous": 200
+    },
+    "gasification": {
+      "organic": 250,
+      "plastic": 700,
+      "paper": 350,
+      "metal": 80,
+      "glass": 40,
+      "textile": 300,
+      "construction": 150,
+      "hazardous": 500
+    }
+  },
+  "economic_params": {
+    "electricity_sell_price": 0.45,
+    "carbon_credit_price": 150,
+    "transport_cost_per_km": 3.5,
+    "plant_costs": {
+      "incineration": {
+        "capex_per_ton": 750000,
+        "opex_per_ton": 85
+      },
+      "anaerobic_digestion": {
+        "capex_per_ton": 500000,
+        "opex_per_ton": 60
+      },
+      "gasification": {
+        "capex_per_ton": 900000,
+        "opex_per_ton": 95
+      }
+    }
+  }
+}

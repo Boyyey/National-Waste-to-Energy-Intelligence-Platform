@@ -1,0 +1,13 @@
+type,name,emirate,coordinates,capacity_tons_per_day,remaining_capacity_years,capacity_mw,technology,efficiency,operational_since
+landfill,Al Ain landfill,Abu Dhabi,"[24.4667, 54.3667]",6600.0,22.193155627455052,,,,
+landfill,Abu Dhabi landfill,Abu Dhabi,"[24.4667, 54.3667]",6600.0,23.2229153795207,,,,
+wte_plant,Abu Dhabi WTE Plant (100 MW),Abu Dhabi,"[24.4667, 54.3667]",,,100.0,incineration,0.25,2019.0
+landfill,Jebel Ali landfill,Dubai,"[25.2769, 55.2962]",9600.0,18.3574740750316,,,,
+landfill,Al Qusais landfill,Dubai,"[25.2769, 55.2962]",9600.0,22.117295715785183,,,,
+wte_plant,Dubai WTE Plant (45 MW),Dubai,"[25.2769, 55.2962]",,,45.0,incineration,0.25,2018.0
+landfill,Al Sajaa landfill,Sharjah,"[25.3714, 55.4064]",2700.0,18.620475042229167,,,,
+wte_plant,Sharjah WTE Plant (30 MW),Sharjah,"[25.3714, 55.4064]",,,30.0,incineration,0.25,2017.0
+landfill,Ajman landfill,Ajman,"[25.4181, 55.4444]",720.0,17.73265635629586,,,,
+landfill,UAQ landfill,Umm Al Quwain,"[25.5647, 55.5552]",480.0,24.904356671368912,,,,
+landfill,RAK landfill,Ras Al Khaimah,"[25.7895, 55.9432]",900.0,16.34991409625278,,,,
+landfill,Fujairah landfill,Fujairah,"[25.1164, 56.3215]",540.0,19.649457376417654,,,,

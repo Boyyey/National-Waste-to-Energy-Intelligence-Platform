@@ -1,0 +1,106 @@
+{
+  "emirates": {
+    "Abu Dhabi": {
+      "population_2024": 3789000,
+      "area_km2": 97200,
+      "gdp_per_capita": 117000,
+      "coordinates": [
+        24.4667,
+        54.3667
+      ]
+    },
+    "Dubai": {
+      "population_2024": 3660000,
+      "area_km2": 4110,
+      "gdp_per_capita": 44000,
+      "coordinates": [
+        25.2769,
+        55.2962
+      ]
+    },
+    "Sharjah": {
+      "population_2024": 1800000,
+      "area_km2": 2590,
+      "gdp_per_capita": 32000,
+      "coordinates": [
+        25.3714,
+        55.4064
+      ]
+    },
+    "Ajman": {
+      "population_2024": 504000,
+      "area_km2": 460,
+      "gdp_per_capita": 28000,
+      "coordinates": [
+        25.4181,
+        55.4444
+      ]
+    },
+    "Umm Al Quwain": {
+      "population_2024": 290000,
+      "area_km2": 720,
+      "gdp_per_capita": 26000,
+      "coordinates": [
+        25.5647,
+        55.5552
+      ]
+    },
+    "Ras Al Khaimah": {
+      "population_2024": 345000,
+      "area_km2": 1684,
+      "gdp_per_capita": 29000,
+      "coordinates": [
+        25.7895,
+        55.9432
+      ]
+    },
+    "Fujairah": {
+      "population_2024": 285000,
+      "area_km2": 1450,
+      "gdp_per_capita": 31000,
+      "coordinates": [
+        25.1164,
+        56.3215
+      ]
+    }
+  },
+  "cities": {
+    "Abu Dhabi": [
+      "Abu Dhabi City",
+      "Al Ain",
+      "Madinat Zayed",
+      "Ghayathi"
+    ],
+    "Dubai": [
+      "Dubai",
+      "Jebel Ali",
+      "Al Quoz",
+      "Deira",
+      "Bur Dubai"
+    ],
+    "Sharjah": [
+      "Sharjah City",
+      "Al Dhaid",
+      "Khor Fakkan",
+      "Kalba"
+    ],
+    "Ajman": [
+      "Ajman City",
+      "Manama"
+    ],
+    "Umm Al Quwain": [
+      "Umm Al Quwain City",
+      "Al Salamah"
+    ],
+    "Ras Al Khaimah": [
+      "RAK City",
+      "Al Jazirah Al Hamra",
+      "Dhayd"
+    ],
+    "Fujairah": [
+      "Fujairah City",
+      "Dibba",
+      "Masafi"
+    ]
+  }
+}

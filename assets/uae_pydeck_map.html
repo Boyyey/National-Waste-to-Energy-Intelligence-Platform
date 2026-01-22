@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>pydeck</title>
+        <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.13.0/mapbox-gl.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <script src='https://cdn.jsdelivr.net/npm/@deck.gl/jupyter-widget@~9.0.*/dist/index.js'></script>
+    <style>
+    body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#deck-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+#deck-container canvas {
+  z-index: 1;
+  background: none;
+}
+    </style>
+  </head>
+  <body>
+    <div id="deck-container">
+    </div>
+  </body>
+  <script>
+    const container = document.getElementById('deck-container');
+    const jsonInput = {
+  "initialViewState": {
+    "bearing": 0,
+    "latitude": 24.0,
+    "longitude": 54.0,
+    "pitch": 45,
+    "zoom": 6
+  },
+  "layers": [
+    {
+      "@@type": "ScatterplotLayer",
+      "data": [
+        {
+          "emirate": "Abu Dhabi",
+          "latitude": 24.4667,
+          "longitude": 54.3667,
+          "waste_tons_per_day": 11451.4108128,
+          "year": 2024
+        },
+        {
+          "emirate": "Abu Dhabi",
+          "latitude": 24.4667,
+          "longitude": 54.3667,
+          "waste_tons_per_day": 15012.054776736002,
+          "year": 2025
+        },
+        {
+          "emirate": "Abu Dhabi",
+          "latitude": 24.4667,
+          "longitude": 54.3667,
+          "waste_tons_per_day": 12896.423651139841,
+          "year": 2026
+        },
+        {
+          "emirate": "Abu Dhabi",
+          "latitude": 24.4667,
+          "longitude": 54.3667,
+          "waste_tons_per_day": 10732.345134309147,
+          "year": 2027
+        },
+        {
+          "emirate": "Abu Dhabi",
+          "latitude": 24.4667,
+          "longitude": 54.3667,
+          "waste_tons_per_day": 13737.352806595693,
+          "year": 2028
+        },
+        {
+          "emirate": "Abu Dhabi",
+          "latitude": 24.4667,
+          "longitude": 54.3667,
+          "waste_tons_per_day": 17554.622754131055,
+          "year": 2029
+        },
+        {
+          "emirate": "Abu Dhabi",
+          "latitude": 24.4667,
+          "longitude": 54.3667,
+          "waste_tons_per_day": 14819.966785751307,
+          "year": 2030
+        },
+        {
+          "emirate": "Abu Dhabi",
+          "latitude": 24.4667,
+          "longitude": 54.3667,
+          "waste_tons_per_day": 12541.06338688981,
+          "year": 2031
+        },
+        {
+          "emirate": "Abu Dhabi",
+          "latitude": 24.4667,
+          "longitude": 54.3667,
+          "waste_tons_per_day": 16920.937727344142,
+          "year": 2032
+        },
+        {
+          "emirate": "Abu Dhabi",
+          "latitude": 24.4667,
+          "longitude": 54.3667,
+          "waste_tons_per_day": 20820.76649462816,
+          "year": 2033
+        },
+        {
+          "emirate": "Abu Dhabi",
+          "latitude": 24.4667,
+          "longitude": 54.3667,
+          "waste_tons_per_day": 17972.495802122234,
+          "year": 2034
+        },
+        {
+          "emirate": "Abu Dhabi",
+          "latitude": 24.4667,
+          "longitude": 54.3667,
+          "waste_tons_per_day": 14563.215683700935,
+          "year": 2035
+        },
+        {
+          "emirate": "Abu Dhabi",
+          "latitude": 24.4667,
+          "longitude": 54.3667,
+          "waste_tons_per_day": 19855.014245052975,
+          "year": 2036
+        },
+        {
+          "emirate": "Abu Dhabi",
+          "latitude": 24.4667,
+          "longitude": 54.3667,
+          "waste_tons_per_day": 24918.790544542506,
+          "year": 2037
+        },
+        {
+          "emirate": "Abu Dhabi",
+          "latitude": 24.4667,
+          "longitude": 54.3667,
+          "waste_tons_per_day": 20593.726331401373,
+          "year": 2038
+        },
+        {
+          "emirate": "Abu Dhabi",
+          "latitude": 24.4667,
+          "longitude": 54.3667,
+          "waste_tons_per_day": 17650.395022706154,
+          "year": 2039
+        },
+        {
+          "emirate": "Abu Dhabi",
+          "latitude": 24.4667,
+          "longitude": 54.3667,
+          "waste_tons_per_day": 24266.364805876226,
+          "year": 2040
+        },
+        {
+          "emirate": "Abu Dhabi",
+          "latitude": 24.4667,
+          "longitude": 54.3667,
+          "waste_tons_per_day": 28405.854319960297,
+          "year": 2041
+        },
+        {
+          "emirate": "Abu Dhabi",
+          "latitude": 24.4667,
+          "longitude": 54.3667,
+          "waste_tons_per_day": 26152.275163666054,
+          "year": 2042
+        },
+        {
+          "emirate": "Abu Dhabi",
+          "latitude": 24.4667,
+          "longitude": 54.3667,
+          "waste_tons_per_day": 20707.45457822991,
+          "year": 2043
+        },
+        {
+          "emirate": "Abu Dhabi",
+          "latitude": 24.4667,
+          "longitude": 54.3667,
+          "waste_tons_per_day": 26973.84061337372,
+          "year": 2044
+        },
+        {
+          "emirate": "Abu Dhabi",
+          "latitude": 24.4667,
+          "longitude": 54.3667,
+          "waste_tons_per_day": 34736.62452769168,
+          "year": 2045
+        },
+        {
+          "emirate": "Abu Dhabi",
+          "latitude": 24.4667,
+          "longitude": 54.3667,
+          "waste_tons_per_day": 30943.077096760535,
+          "year": 2046
+        },
+        {
+          "emirate": "Abu Dhabi",
+          "latitude": 24.4667,
+          "longitude": 54.3667,
+          "waste_tons_per_day": 25948.721571318994,
+          "year": 2047
+        },
+        {
+          "emirate": "Abu Dhabi",
+          "latitude": 24.4667,
+          "longitude": 54.3667,
+          "waste_tons_per_day": 34499.90691737033,
+          "year": 2048
+        },
+        {
+          "emirate": "Ajman",
+          "latitude": 25.4181,
+          "longitude": 55.4444,
+          "waste_tons_per_day": 843.8726656000001,
+          "year": 2024
+        },
+        {
+          "emirate": "Ajman",
+          "latitude": 25.4181,
+          "longitude": 55.4444,
+          "waste_tons_per_day": 1017.1059204096001,
+          "year": 2025
+        },
+        {
+          "emirate": "Ajman",
+          "latitude": 25.4181,
+          "longitude": 55.4444,
+          "waste_tons_per_day": 874.6986642688001,
+          "year": 2026
+        },
+        {
+          "emirate": "Ajman",
+          "latitude": 25.4181,
+          "longitude": 55.4444,
+          "waste_tons_per_day": 760.1358184575797,
+          "year": 2027
+        },
+        {
+          "emirate": "Ajman",
+          "latitude": 25.4181,
+          "longitude": 55.4444,
+          "waste_tons_per_day": 984.8190803164201,
+          "year": 2028
+        },
+        {
+          "emirate": "Ajman",
+          "latitude": 25.4181,
+          "longitude": 55.4444,
+          "waste_tons_per_day": 1174.1829102729507,
+          "year": 2029
+        },
+        {
+          "emirate": "Ajman",
+          "latitude": 25.4181,
+          "longitude": 55.4444,
+          "waste_tons_per_day": 1036.3693909917683,
+          "year": 2030
+        },
+        {
+          "emirate": "Ajman",
+          "latitude": 25.4181,
+          "longitude": 55.4444,
+          "waste_tons_per_day": 865.8930312757418,
+          "year": 2031
+        },
+        {
+          "emirate": "Ajman",
+          "latitude": 25.4181,
+          "longitude": 55.4444,
+          "waste_tons_per_day": 1148.414277920476,
+          "year": 2032
+        },
+        {
+          "emirate": "Ajman",
+          "latitude": 25.4181,
+          "longitude": 55.4444,
+          "waste_tons_per_day": 1435.4304639521458,
+          "year": 2033
+        },
+        {
+          "emirate": "Ajman",
+          "latitude": 25.4181,
+          "longitude": 55.4444,
+          "waste_tons_per_day": 1176.6212754135474,
+          "year": 2034
+        },
+        {
+          "emirate": "Ajman",
+          "latitude": 25.4181,
+          "longitude": 55.4444,
+          "waste_tons_per_day": 1024.648891075786,
+          "year": 2035
+        },
+        {
+          "emirate": "Ajman",
+          "latitude": 25.4181,
+          "longitude": 55.4444,
+          "waste_tons_per_day": 1287.739871561354,
+          "year": 2036
+        },
+        {
+          "emirate": "Ajman",
+          "latitude": 25.4181,
+          "longitude": 55.4444,
+          "waste_tons_per_day": 1657.761851559341,
+          "year": 2037
+        },
+        {
+          "emirate": "Ajman",
+          "latitude": 25.4181,
+          "longitude": 55.4444,
+          "waste_tons_per_day": 1482.7036816070813,
+          "year": 2038
+        },
+        {
+          "emirate": "Ajman",
+          "latitude": 25.4181,
+          "longitude": 55.4444,
+          "waste_tons_per_day": 1202.1814061267562,
+          "year": 2039
+        },
+        {
+          "emirate": "Ajman",
+          "latitude": 25.4181,
+          "longitude": 55.4444,
+          "waste_tons_per_day": 1545.541374302659,
+          "year": 2040
+        },
+        {
+          "emirate": "Ajman",
+          "latitude": 25.4181,
+          "longitude": 55.4444,
+          "waste_tons_per_day": 1964.9885354571463,
+          "year": 2041
+        },
+        {
+          "emirate": "Ajman",
+          "latitude": 25.4181,
+          "longitude": 55.4444,
+          "waste_tons_per_day": 1706.2572300263269,
+          "year": 2042
+        },
+        {
+          "emirate": "Ajman",
+          "latitude": 25.4181,
+          "longitude": 55.4444,
+          "waste_tons_per_day": 1378.8751390605528,
+          "year": 2043
+        },
+        {
+          "emirate": "Ajman",
+          "latitude": 25.4181,
+          "longitude": 55.4444,
+          "waste_tons_per_day": 1874.1646859066288,
+          "year": 2044
+        },
+        {
+          "emirate": "Ajman",
+          "latitude": 25.4181,
+          "longitude": 55.4444,
+          "waste_tons_per_day": 2248.00544345041,
+          "year": 2045
+        },
+        {
+          "emirate": "Ajman",
+          "latitude": 25.4181,
+          "longitude": 55.4444,
+          "waste_tons_per_day": 2042.7574331205597,
+          "year": 2046
+        },
+        {
+          "emirate": "Ajman",
+          "latitude": 25.4181,
+          "longitude": 55.4444,
+          "waste_tons_per_day": 1642.794977594559,
+          "year": 2047
+        },
+        {
+          "emirate": "Ajman",
+          "latitude": 25.4181,
+          "longitude": 55.4444,
+          "waste_tons_per_day": 2094.8971016479986,
+          "year": 2048
+        },
+        {
+          "emirate": "Dubai",
+          "latitude": 25.2769,
+          "longitude": 55.2962,
+          "waste_tons_per_day": 8996.073408000002,
+          "year": 2024
+        },
+        {
+          "emirate": "Dubai",
+          "latitude": 25.2769,
+          "longitude": 55.2962,
+          "waste_tons_per_day": 11233.3403048832,
+          "year": 2025
+        },
+        {
+          "emirate": "Dubai",
+          "latitude": 25.2769,
+          "longitude": 55.2962,
+          "waste_tons_per_day": 9493.946591653443,
+          "year": 2026
+        },
+        {
+          "emirate": "Dubai",
+          "latitude": 25.2769,
+          "longitude": 55.2962,
+          "waste_tons_per_day": 8217.069511186206,
+          "year": 2027
+        },
+        {
+          "emirate": "Dubai",
+          "latitude": 25.2769,
+          "longitude": 55.2962,
+          "waste_tons_per_day": 10466.442373319756,
+          "year": 2028
+        },
+        {
+          "emirate": "Dubai",
+          "latitude": 25.2769,
+          "longitude": 55.2962,
+          "waste_tons_per_day": 12914.000716773748,
+          "year": 2029
+        },
+        {
+          "emirate": "Dubai",
+          "latitude": 25.2769,
+          "longitude": 55.2962,
+          "waste_tons_per_day": 11761.088139447464,
+          "year": 2030
+        },
+        {
+          "emirate": "Dubai",
+          "latitude": 25.2769,
+          "longitude": 55.2962,
+          "waste_tons_per_day": 9881.73499668478,
+          "year": 2031
+        },
+        {
+          "emirate": "Dubai",
+          "latitude": 25.2769,
+          "longitude": 55.2962,
+          "waste_tons_per_day": 12334.428045179184,
+          "year": 2032
+        },
+        {
+          "emirate": "Dubai",
+          "latitude": 25.2769,
+          "longitude": 55.2962,
+          "waste_tons_per_day": 15545.942030515344,
+          "year": 2033
+        },
+        {
+          "emirate": "Dubai",
+          "latitude": 25.2769,
+          "longitude": 55.2962,
+          "waste_tons_per_day": 13809.063838983855,
+          "year": 2034
+        },
+        {
+          "emirate": "Dubai",
+          "latitude": 25.2769,
+          "longitude": 55.2962,
+          "waste_tons_per_day": 11803.777649982083,
+          "year": 2035
+        },
+        {
+          "emirate": "Dubai",
+          "latitude": 25.2769,
+          "longitude": 55.2962,
+          "waste_tons_per_day": 15413.660650830872,
+          "year": 2036
+        },
+        {
+          "emirate": "Dubai",
+          "latitude": 25.2769,
+          "longitude": 55.2962,
+          "waste_tons_per_day": 19355.68344194828,
+          "year": 2037
+        },
+        {
+          "emirate": "Dubai",
+          "latitude": 25.2769,
+          "longitude": 55.2962,
+          "waste_tons_per_day": 16009.390519229622,
+          "year": 2038
+        },
+        {
+          "emirate": "Dubai",
+          "latitude": 25.2769,
+          "longitude": 55.2962,
+          "waste_tons_per_day": 13813.810255469964,
+          "year": 2039
+        },
+        {
+          "emirate": "Dubai",
+          "latitude": 25.2769,
+          "longitude": 55.2962,
+          "waste_tons_per_day": 17954.352056065312,
+          "year": 2040
+        },
+        {
+          "emirate": "Dubai",
+          "latitude": 25.2769,
+          "longitude": 55.2962,
+          "waste_tons_per_day": 23319.027231327193,
+          "year": 2041
+        },
+        {
+          "emirate": "Dubai",
+          "latitude": 25.2769,
+          "longitude": 55.2962,
+          "waste_tons_per_day": 20242.303515027506,
+          "year": 2042
+        },
+        {
+          "emirate": "Dubai",
+          "latitude": 25.2769,
+          "longitude": 55.2962,
+          "waste_tons_per_day": 17126.409276213646,
+          "year": 2043
+        },
+        {
+          "emirate": "Dubai",
+          "latitude": 25.2769,
+          "longitude": 55.2962,
+          "waste_tons_per_day": 22584.73594213794,
+          "year": 2044
+        },
+        {
+          "emirate": "Dubai",
+          "latitude": 25.2769,
+          "longitude": 55.2962,
+          "waste_tons_per_day": 26251.61051993458,
+          "year": 2045
+        },
+        {
+          "emirate": "Dubai",
+          "latitude": 25.2769,
+          "longitude": 55.2962,
+          "waste_tons_per_day": 23828.065481128928,
+          "year": 2046
+        },
+        {
+          "emirate": "Dubai",
+          "latitude": 25.2769,
+          "longitude": 55.2962,
+          "waste_tons_per_day": 19272.135950785727,
+          "year": 2047
+        },
+        {
+          "emirate": "Dubai",
+          "latitude": 25.2769,
+          "longitude": 55.2962,
+          "waste_tons_per_day": 26918.63140661924,
+          "year": 2048
+        },
+        {
+          "emirate": "Fujairah",
+          "latitude": 25.1164,
+          "longitude": 56.3215,
+          "waste_tons_per_day": 444.127728,
+          "year": 2024
+        },
+        {
+          "emirate": "Fujairah",
+          "latitude": 25.1164,
+          "longitude": 56.3215,
+          "waste_tons_per_day": 572.091964128,
+          "year": 2025
+        },
+        {
+          "emirate": "Fujairah",
+          "latitude": 25.1164,
+          "longitude": 56.3215,
+          "waste_tons_per_day": 491.3976605844,
+          "year": 2026
+        },
+        {
+          "emirate": "Fujairah",
+          "latitude": 25.1164,
+          "longitude": 56.3215,
+          "waste_tons_per_day": 408.22951615372807,
+          "year": 2027
+        },
+        {
+          "emirate": "Fujairah",
+          "latitude": 25.1164,
+          "longitude": 56.3215,
+          "waste_tons_per_day": 513.9225147241588,
+          "year": 2028
+        },
+        {
+          "emirate": "Fujairah",
+          "latitude": 25.1164,
+          "longitude": 56.3215,
+          "waste_tons_per_day": 614.9035857782408,
+          "year": 2029
+        },
+        {
+          "emirate": "Fujairah",
+          "latitude": 25.1164,
+          "longitude": 56.3215,
+          "waste_tons_per_day": 550.2470618338876,
+          "year": 2030
+        },
+        {
+          "emirate": "Fujairah",
+          "latitude": 25.1164,
+          "longitude": 56.3215,
+          "waste_tons_per_day": 463.26562321044906,
+          "year": 2031
+        },
+        {
+          "emirate": "Fujairah",
+          "latitude": 25.1164,
+          "longitude": 56.3215,
+          "waste_tons_per_day": 580.9759718990537,
+          "year": 2032
+        },
+        {
+          "emirate": "Fujairah",
+          "latitude": 25.1164,
+          "longitude": 56.3215,
+          "waste_tons_per_day": 744.1870450504633,
+          "year": 2033
+        },
+        {
+          "emirate": "Fujairah",
+          "latitude": 25.1164,
+          "longitude": 56.3215,
+          "waste_tons_per_day": 646.047416733596,
+          "year": 2034
+        },
+        {
+          "emirate": "Fujairah",
+          "latitude": 25.1164,
+          "longitude": 56.3215,
+          "waste_tons_per_day": 529.320861488065,
+          "year": 2035
+        },
+        {
+          "emirate": "Fujairah",
+          "latitude": 25.1164,
+          "longitude": 56.3215,
+          "waste_tons_per_day": 706.4980954464387,
+          "year": 2036
+        },
+        {
+          "emirate": "Fujairah",
+          "latitude": 25.1164,
+          "longitude": 56.3215,
+          "waste_tons_per_day": 855.5578935631536,
+          "year": 2037
+        },
+        {
+          "emirate": "Fujairah",
+          "latitude": 25.1164,
+          "longitude": 56.3215,
+          "waste_tons_per_day": 727.6163087751565,
+          "year": 2038
+        },
+        {
+          "emirate": "Fujairah",
+          "latitude": 25.1164,
+          "longitude": 56.3215,
+          "waste_tons_per_day": 614.1289182855429,
+          "year": 2039
+        },
+        {
+          "emirate": "Fujairah",
+          "latitude": 25.1164,
+          "longitude": 56.3215,
+          "waste_tons_per_day": 795.2603409385675,
+          "year": 2040
+        },
+        {
+          "emirate": "Fujairah",
+          "latitude": 25.1164,
+          "longitude": 56.3215,
+          "waste_tons_per_day": 999.3762402632972,
+          "year": 2041
+        },
+        {
+          "emirate": "Fujairah",
+          "latitude": 25.1164,
+          "longitude": 56.3215,
+          "waste_tons_per_day": 876.4811680661276,
+          "year": 2042
+        },
+        {
+          "emirate": "Fujairah",
+          "latitude": 25.1164,
+          "longitude": 56.3215,
+          "waste_tons_per_day": 718.9252172475544,
+          "year": 2043
+        },
+        {
+          "emirate": "Fujairah",
+          "latitude": 25.1164,
+          "longitude": 56.3215,
+          "waste_tons_per_day": 942.6754338139805,
+          "year": 2044
+        },
+        {
+          "emirate": "Fujairah",
+          "latitude": 25.1164,
+          "longitude": 56.3215,
+          "waste_tons_per_day": 1185.1991154323598,
+          "year": 2045
+        },
+        {
+          "emirate": "Fujairah",
+          "latitude": 25.1164,
+          "longitude": 56.3215,
+          "waste_tons_per_day": 1009.5612451088398,
+          "year": 2046
+        },
+        {
+          "emirate": "Fujairah",
+          "latitude": 25.1164,
+          "longitude": 56.3215,
+          "waste_tons_per_day": 840.3228625114983,
+          "year": 2047
+        },
+        {
+          "emirate": "Fujairah",
+          "latitude": 25.1164,
+          "longitude": 56.3215,
+          "waste_tons_per_day": 1144.3805658467281,
+          "year": 2048
+        },
+        {
+          "emirate": "Ras Al Khaimah",
+          "latitude": 25.7895,
+          "longitude": 55.9432,
+          "waste_tons_per_day": 575.9831424000001,
+          "year": 2024
+        },
+        {
+          "emirate": "Ras Al Khaimah",
+          "latitude": 25.7895,
+          "longitude": 55.9432,
+          "waste_tons_per_day": 710.5728374784001,
+          "year": 2025
+        },
+        {
+          "emirate": "Ras Al Khaimah",
+          "latitude": 25.7895,
+          "longitude": 55.9432,
+          "waste_tons_per_day": 596.7687769267201,
+          "year": 2026
+        },
+        {
+          "emirate": "Ras Al Khaimah",
+          "latitude": 25.7895,
+          "longitude": 55.9432,
+          "waste_tons_per_day": 509.4348981835777,
+          "year": 2027
+        },
+        {
+          "emirate": "Ras Al Khaimah",
+          "latitude": 25.7895,
+          "longitude": 55.9432,
+          "waste_tons_per_day": 653.1376806047682,
+          "year": 2028
+        },
+        {
+          "emirate": "Ras Al Khaimah",
+          "latitude": 25.7895,
+          "longitude": 55.9432,
+          "waste_tons_per_day": 854.0618728636952,
+          "year": 2029
+        },
+        {
+          "emirate": "Ras Al Khaimah",
+          "latitude": 25.7895,
+          "longitude": 55.9432,
+          "waste_tons_per_day": 717.9261114310536,
+          "year": 2030
+        },
+        {
+          "emirate": "Ras Al Khaimah",
+          "latitude": 25.7895,
+          "longitude": 55.9432,
+          "waste_tons_per_day": 612.8142010979365,
+          "year": 2031
+        },
+        {
+          "emirate": "Ras Al Khaimah",
+          "latitude": 25.7895,
+          "longitude": 55.9432,
+          "waste_tons_per_day": 765.8652294467402,
+          "year": 2032
+        },
+        {
+          "emirate": "Ras Al Khaimah",
+          "latitude": 25.7895,
+          "longitude": 55.9432,
+          "waste_tons_per_day": 973.2273018143111,
+          "year": 2033
+        },
+        {
+          "emirate": "Ras Al Khaimah",
+          "latitude": 25.7895,
+          "longitude": 55.9432,
+          "waste_tons_per_day": 798.2695513909067,
+          "year": 2034
+        },
+        {
+          "emirate": "Ras Al Khaimah",
+          "latitude": 25.7895,
+          "longitude": 55.9432,
+          "waste_tons_per_day": 688.2342525527052,
+          "year": 2035
+        },
+        {
+          "emirate": "Ras Al Khaimah",
+          "latitude": 25.7895,
+          "longitude": 55.9432,
+          "waste_tons_per_day": 919.4389161920569,
+          "year": 2036
+        },
+        {
+          "emirate": "Ras Al Khaimah",
+          "latitude": 25.7895,
+          "longitude": 55.9432,
+          "waste_tons_per_day": 1099.8266305399743,
+          "year": 2037
+        },
+        {
+          "emirate": "Ras Al Khaimah",
+          "latitude": 25.7895,
+          "longitude": 55.9432,
+          "waste_tons_per_day": 984.2380184125993,
+          "year": 2038
+        },
+        {
+          "emirate": "Ras Al Khaimah",
+          "latitude": 25.7895,
+          "longitude": 55.9432,
+          "waste_tons_per_day": 828.805147286811,
+          "year": 2039
+        },
+        {
+          "emirate": "Ras Al Khaimah",
+          "latitude": 25.7895,
+          "longitude": 55.9432,
+          "waste_tons_per_day": 1058.1688090858277,
+          "year": 2040
+        },
+        {
+          "emirate": "Ras Al Khaimah",
+          "latitude": 25.7895,
+          "longitude": 55.9432,
+          "waste_tons_per_day": 1332.228281858052,
+          "year": 2041
+        },
+        {
+          "emirate": "Ras Al Khaimah",
+          "latitude": 25.7895,
+          "longitude": 55.9432,
+          "waste_tons_per_day": 1141.9386388208752,
+          "year": 2042
+        },
+        {
+          "emirate": "Ras Al Khaimah",
+          "latitude": 25.7895,
+          "longitude": 55.9432,
+          "waste_tons_per_day": 967.9052853704123,
+          "year": 2043
+        },
+        {
+          "emirate": "Ras Al Khaimah",
+          "latitude": 25.7895,
+          "longitude": 55.9432,
+          "waste_tons_per_day": 1263.1735570354165,
+          "year": 2044
+        },
+        {
+          "emirate": "Ras Al Khaimah",
+          "latitude": 25.7895,
+          "longitude": 55.9432,
+          "waste_tons_per_day": 1565.3412928920122,
+          "year": 2045
+        },
+        {
+          "emirate": "Ras Al Khaimah",
+          "latitude": 25.7895,
+          "longitude": 55.9432,
+          "waste_tons_per_day": 1321.5200003636573,
+          "year": 2046
+        },
+        {
+          "emirate": "Ras Al Khaimah",
+          "latitude": 25.7895,
+          "longitude": 55.9432,
+          "waste_tons_per_day": 1140.4556499487749,
+          "year": 2047
+        },
+        {
+          "emirate": "Ras Al Khaimah",
+          "latitude": 25.7895,
+          "longitude": 55.9432,
+          "waste_tons_per_day": 1464.497976873604,
+          "year": 2048
+        },
+        {
+          "emirate": "Sharjah",
+          "latitude": 25.3714,
+          "longitude": 55.4064,
+          "waste_tons_per_day": 3198.0662208,
+          "year": 2024
+        },
+        {
+          "emirate": "Sharjah",
+          "latitude": 25.3714,
+          "longitude": 55.4064,
+          "waste_tons_per_day": 4021.2329647104007,
+          "year": 2025
+        },
+        {
+          "emirate": "Sharjah",
+          "latitude": 25.3714,
+          "longitude": 55.4064,
+          "waste_tons_per_day": 3408.498670464,
+          "year": 2026
+        },
+        {
+          "emirate": "Sharjah",
+          "latitude": 25.3714,
+          "longitude": 55.4064,
+          "waste_tons_per_day": 2825.613396358288,
+          "year": 2027
+        },
+        {
+          "emirate": "Sharjah",
+          "latitude": 25.3714,
+          "longitude": 55.4064,
+          "waste_tons_per_day": 3725.0890118716443,
+          "year": 2028
+        },
+        {
+          "emirate": "Sharjah",
+          "latitude": 25.3714,
+          "longitude": 55.4064,
+          "waste_tons_per_day": 4754.48243540578,
+          "year": 2029
+        },
+        {
+          "emirate": "Sharjah",
+          "latitude": 25.3714,
+          "longitude": 55.4064,
+          "waste_tons_per_day": 4006.9960827968484,
+          "year": 2030
+        },
+        {
+          "emirate": "Sharjah",
+          "latitude": 25.3714,
+          "longitude": 55.4064,
+          "waste_tons_per_day": 3287.9234026153554,
+          "year": 2031
+        },
+        {
+          "emirate": "Sharjah",
+          "latitude": 25.3714,
+          "longitude": 55.4064,
+          "waste_tons_per_day": 4218.4074519502465,
+          "year": 2032
+        },
+        {
+          "emirate": "Sharjah",
+          "latitude": 25.3714,
+          "longitude": 55.4064,
+          "waste_tons_per_day": 5451.343961539121,
+          "year": 2033
+        },
+        {
+          "emirate": "Sharjah",
+          "latitude": 25.3714,
+          "longitude": 55.4064,
+          "waste_tons_per_day": 4669.36442529607,
+          "year": 2034
+        },
+        {
+          "emirate": "Sharjah",
+          "latitude": 25.3714,
+          "longitude": 55.4064,
+          "waste_tons_per_day": 3782.943308161517,
+          "year": 2035
+        },
+        {
+          "emirate": "Sharjah",
+          "latitude": 25.3714,
+          "longitude": 55.4064,
+          "waste_tons_per_day": 4912.2161304531965,
+          "year": 2036
+        },
+        {
+          "emirate": "Sharjah",
+          "latitude": 25.3714,
+          "longitude": 55.4064,
+          "waste_tons_per_day": 5823.433788242919,
+          "year": 2037
+        },
+        {
+          "emirate": "Sharjah",
+          "latitude": 25.3714,
+          "longitude": 55.4064,
+          "waste_tons_per_day": 5522.25568779584,
+          "year": 2038
+        },
+        {
+          "emirate": "Sharjah",
+          "latitude": 25.3714,
+          "longitude": 55.4064,
+          "waste_tons_per_day": 4479.6706808734225,
+          "year": 2039
+        },
+        {
+          "emirate": "Sharjah",
+          "latitude": 25.3714,
+          "longitude": 55.4064,
+          "waste_tons_per_day": 5916.830971685315,
+          "year": 2040
+        },
+        {
+          "emirate": "Sharjah",
+          "latitude": 25.3714,
+          "longitude": 55.4064,
+          "waste_tons_per_day": 7056.587536451041,
+          "year": 2041
+        },
+        {
+          "emirate": "Sharjah",
+          "latitude": 25.3714,
+          "longitude": 55.4064,
+          "waste_tons_per_day": 6337.090420126968,
+          "year": 2042
+        },
+        {
+          "emirate": "Sharjah",
+          "latitude": 25.3714,
+          "longitude": 55.4064,
+          "waste_tons_per_day": 5170.497600788088,
+          "year": 2043
+        },
+        {
+          "emirate": "Sharjah",
+          "latitude": 25.3714,
+          "longitude": 55.4064,
+          "waste_tons_per_day": 6495.239520474938,
+          "year": 2044
+        },
+        {
+          "emirate": "Sharjah",
+          "latitude": 25.3714,
+          "longitude": 55.4064,
+          "waste_tons_per_day": 8677.928685428893,
+          "year": 2045
+        },
+        {
+          "emirate": "Sharjah",
+          "latitude": 25.3714,
+          "longitude": 55.4064,
+          "waste_tons_per_day": 7375.700762002703,
+          "year": 2046
+        },
+        {
+          "emirate": "Sharjah",
+          "latitude": 25.3714,
+          "longitude": 55.4064,
+          "waste_tons_per_day": 6030.640782418985,
+          "year": 2047
+        },
+        {
+          "emirate": "Sharjah",
+          "latitude": 25.3714,
+          "longitude": 55.4064,
+          "waste_tons_per_day": 7681.240631276281,
+          "year": 2048
+        },
+        {
+          "emirate": "Umm Al Quwain",
+          "latitude": 25.5647,
+          "longitude": 55.5552,
+          "waste_tons_per_day": 453.1842,
+          "year": 2024
+        },
+        {
+          "emirate": "Umm Al Quwain",
+          "latitude": 25.5647,
+          "longitude": 55.5552,
+          "waste_tons_per_day": 559.313398944,
+          "year": 2025
+        },
+        {
+          "emirate": "Umm Al Quwain",
+          "latitude": 25.5647,
+          "longitude": 55.5552,
+          "waste_tons_per_day": 472.1269647024001,
+          "year": 2026
+        },
+        {
+          "emirate": "Umm Al Quwain",
+          "latitude": 25.5647,
+          "longitude": 55.5552,
+          "waste_tons_per_day": 388.2775853082241,
+          "year": 2027
+        },
+        {
+          "emirate": "Umm Al Quwain",
+          "latitude": 25.5647,
+          "longitude": 55.5552,
+          "waste_tons_per_day": 500.3340101933796,
+          "year": 2028
+        },
+        {
+          "emirate": "Umm Al Quwain",
+          "latitude": 25.5647,
+          "longitude": 55.5552,
+          "waste_tons_per_day": 640.5404624818182,
+          "year": 2029
+        },
+        {
+          "emirate": "Umm Al Quwain",
+          "latitude": 25.5647,
+          "longitude": 55.5552,
+          "waste_tons_per_day": 540.6926299810062,
+          "year": 2030
+        },
+        {
+          "emirate": "Umm Al Quwain",
+          "latitude": 25.5647,
+          "longitude": 55.5552,
+          "waste_tons_per_day": 462.1676938019692,
+          "year": 2031
+        },
+        {
+          "emirate": "Umm Al Quwain",
+          "latitude": 25.5647,
+          "longitude": 55.5552,
+          "waste_tons_per_day": 579.1442882541093,
+          "year": 2032
+        },
+        {
+          "emirate": "Umm Al Quwain",
+          "latitude": 25.5647,
+          "longitude": 55.5552,
+          "waste_tons_per_day": 728.0904914999713,
+          "year": 2033
+        },
+        {
+          "emirate": "Umm Al Quwain",
+          "latitude": 25.5647,
+          "longitude": 55.5552,
+          "waste_tons_per_day": 633.2312506482866,
+          "year": 2034
+        },
+        {
+          "emirate": "Umm Al Quwain",
+          "latitude": 25.5647,
+          "longitude": 55.5552,
+          "waste_tons_per_day": 529.3965464633746,
+          "year": 2035
+        },
+        {
+          "emirate": "Umm Al Quwain",
+          "latitude": 25.5647,
+          "longitude": 55.5552,
+          "waste_tons_per_day": 694.7743818522036,
+          "year": 2036
+        },
+        {
+          "emirate": "Umm Al Quwain",
+          "latitude": 25.5647,
+          "longitude": 55.5552,
+          "waste_tons_per_day": 825.4425944845235,
+          "year": 2037
+        },
+        {
+          "emirate": "Umm Al Quwain",
+          "latitude": 25.5647,
+          "longitude": 55.5552,
+          "waste_tons_per_day": 713.5019592175353,
+          "year": 2038
+        },
+        {
+          "emirate": "Umm Al Quwain",
+          "latitude": 25.5647,
+          "longitude": 55.5552,
+          "waste_tons_per_day": 621.7326858962471,
+          "year": 2039
+        },
+        {
+          "emirate": "Umm Al Quwain",
+          "latitude": 25.5647,
+          "longitude": 55.5552,
+          "waste_tons_per_day": 807.5828020339987,
+          "year": 2040
+        },
+        {
+          "emirate": "Umm Al Quwain",
+          "latitude": 25.5647,
+          "longitude": 55.5552,
+          "waste_tons_per_day": 1025.8966016910554,
+          "year": 2041
+        },
+        {
+          "emirate": "Umm Al Quwain",
+          "latitude": 25.5647,
+          "longitude": 55.5552,
+          "waste_tons_per_day": 834.811666600631,
+          "year": 2042
+        },
+        {
+          "emirate": "Umm Al Quwain",
+          "latitude": 25.5647,
+          "longitude": 55.5552,
+          "waste_tons_per_day": 719.3428469752739,
+          "year": 2043
+        },
+        {
+          "emirate": "Umm Al Quwain",
+          "latitude": 25.5647,
+          "longitude": 55.5552,
+          "waste_tons_per_day": 932.6040684533568,
+          "year": 2044
+        },
+        {
+          "emirate": "Umm Al Quwain",
+          "latitude": 25.5647,
+          "longitude": 55.5552,
+          "waste_tons_per_day": 1122.035524009845,
+          "year": 2045
+        },
+        {
+          "emirate": "Umm Al Quwain",
+          "latitude": 25.5647,
+          "longitude": 55.5552,
+          "waste_tons_per_day": 1002.6735591539108,
+          "year": 2046
+        },
+        {
+          "emirate": "Umm Al Quwain",
+          "latitude": 25.5647,
+          "longitude": 55.5552,
+          "waste_tons_per_day": 813.6633931862775,
+          "year": 2047
+        },
+        {
+          "emirate": "Umm Al Quwain",
+          "latitude": 25.5647,
+          "longitude": 55.5552,
+          "waste_tons_per_day": 1079.5719534669315,
+          "year": 2048
+        }
+      ],
+      "elevationRange": [
+        0,
+        1000
+      ],
+      "elevationScale": 50,
+      "extruded": true,
+      "getColor": [
+        255,
+        0,
+        0,
+        180
+      ],
+      "getPosition": "@@=[longitude, latitude]",
+      "getRadius": "@@=waste_tons_per_day / 50",
+      "id": "49cabc1e-d939-4dc3-95fa-3927e195dec5",
+      "pickable": true
+    },
+    {
+      "@@type": "TextLayer",
+      "data": [
+        {
+          "emirate": "Abu Dhabi",
+          "latitude": 24.4667,
+          "longitude": 54.3667,
+          "waste_tons_per_day": 11451.4108128,
+          "year": 2024
+        },
+        {
+          "emirate": "Ajman",
+          "latitude": 25.4181,
+          "longitude": 55.4444,
+          "waste_tons_per_day": 843.8726656000001,
+          "year": 2024
+        },
+        {
+          "emirate": "Dubai",
+          "latitude": 25.2769,
+          "longitude": 55.2962,
+          "waste_tons_per_day": 8996.073408000002,
+          "year": 2024
+        },
+        {
+          "emirate": "Fujairah",
+          "latitude": 25.1164,
+          "longitude": 56.3215,
+          "waste_tons_per_day": 444.127728,
+          "year": 2024
+        },
+        {
+          "emirate": "Ras Al Khaimah",
+          "latitude": 25.7895,
+          "longitude": 55.9432,
+          "waste_tons_per_day": 575.9831424000001,
+          "year": 2024
+        },
+        {
+          "emirate": "Sharjah",
+          "latitude": 25.3714,
+          "longitude": 55.4064,
+          "waste_tons_per_day": 3198.0662208,
+          "year": 2024
+        },
+        {
+          "emirate": "Umm Al Quwain",
+          "latitude": 25.5647,
+          "longitude": 55.5552,
+          "waste_tons_per_day": 453.1842,
+          "year": 2024
+        }
+      ],
+      "getAlignmentBaseline": "@@=bottom",
+      "getColor": [
+        0,
+        0,
+        0,
+        200
+      ],
+      "getPosition": "@@=[longitude, latitude]",
+      "getSize": 16,
+      "getText": "@@=emirate",
+      "id": "2a391075-8f2e-4504-9284-972700986c74"
+    }
+  ],
+  "mapProvider": "carto",
+  "mapStyle": "mapbox://styles/mapbox/light-v9",
+  "views": [
+    {
+      "@@type": "MapView",
+      "controller": true
+    }
+  ]
+};
+    const tooltip = {'html': '<b>Emirate:</b> {emirate}<br/><b>Waste:</b> {waste_tons_per_day:.0f} tons/day', 'style': {'color': 'white'}};
+    const customLibraries = null;
+    const configuration = null;
+
+    const deckInstance = createDeck({
+                  container,
+      jsonInput,
+      tooltip,
+      customLibraries,
+      configuration
+    });
+
+  </script>
+</html>

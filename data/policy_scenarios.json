@@ -1,0 +1,30 @@
+{
+  "Current Policy": {
+    "recycling_target_2030": 0.75,
+    "wte_capacity_target_2030": 1000,
+    "landfill_reduction_target": 0.9,
+    "carbon_neutrality_goal": 2050,
+    "description": "Based on UAE National Climate Change Plan 2050"
+  },
+  "Aggressive Green": {
+    "recycling_target_2030": 0.85,
+    "wte_capacity_target_2030": 1500,
+    "landfill_reduction_target": 0.95,
+    "carbon_neutrality_goal": 2045,
+    "description": "Accelerated sustainability goals"
+  },
+  "Business as Usual": {
+    "recycling_target_2030": 0.6,
+    "wte_capacity_target_2030": 600,
+    "landfill_reduction_target": 0.75,
+    "carbon_neutrality_goal": 2060,
+    "description": "Conservative projection"
+  },
+  "Crisis Response": {
+    "recycling_target_2030": 0.9,
+    "wte_capacity_target_2030": 2000,
+    "landfill_reduction_target": 0.98,
+    "carbon_neutrality_goal": 2040,
+    "description": "Rapid response to environmental crisis"
+  }
+}

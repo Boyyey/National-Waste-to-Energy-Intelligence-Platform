@@ -1,0 +1,248 @@
+[
+  {
+    "plant_type": "incineration",
+    "optimal_locations": [
+      {
+        "id": "fujairah_4",
+        "emirate": "Fujairah",
+        "land_cost": 178.9867704998553,
+        "grid_distance": 28.183311238179602,
+        "population_radius_50km": 285000,
+        "industrial_zone_proximity": 0.7341572601776529,
+        "environmental_constraints": 0.6181118782079401
+      },
+      {
+        "id": "dubai_1",
+        "emirate": "Dubai",
+        "land_cost": 112.28974272257588,
+        "grid_distance": 21.746068853493966,
+        "population_radius_50km": 3497028.3187769596,
+        "industrial_zone_proximity": 0.8608165593142654,
+        "environmental_constraints": 0.7565007224426548
+      },
+      {
+        "id": "fujairah_3",
+        "emirate": "Fujairah",
+        "land_cost": 67.14165136611491,
+        "grid_distance": 11.569566037424806,
+        "population_radius_50km": 285000,
+        "industrial_zone_proximity": 0.6228565801948555,
+        "environmental_constraints": 0.8739617216559217
+      },
+      {
+        "id": "abu_dhabi_3",
+        "emirate": "Abu Dhabi",
+        "land_cost": 152.08771819243134,
+        "grid_distance": 19.48005591977207,
+        "population_radius_50km": 153079.919810336,
+        "industrial_zone_proximity": 0.5500328002018473,
+        "environmental_constraints": 0.8824653741256754
+      },
+      {
+        "id": "fujairah_4",
+        "emirate": "Fujairah",
+        "land_cost": 178.9867704998553,
+        "grid_distance": 28.183311238179602,
+        "population_radius_50km": 285000,
+        "industrial_zone_proximity": 0.7341572601776529,
+        "environmental_constraints": 0.6181118782079401
+      },
+      {
+        "id": "fujairah_2",
+        "emirate": "Fujairah",
+        "land_cost": 126.0645366519501,
+        "grid_distance": 49.93573888918224,
+        "population_radius_50km": 285000,
+        "industrial_zone_proximity": 0.45804246526859016,
+        "environmental_constraints": 0.23879076420495948
+      },
+      {
+        "id": "fujairah_2",
+        "emirate": "Fujairah",
+        "land_cost": 126.0645366519501,
+        "grid_distance": 49.93573888918224,
+        "population_radius_50km": 285000,
+        "industrial_zone_proximity": 0.45804246526859016,
+        "environmental_constraints": 0.23879076420495948
+      },
+      {
+        "id": "fujairah_4",
+        "emirate": "Fujairah",
+        "land_cost": 178.9867704998553,
+        "grid_distance": 28.183311238179602,
+        "population_radius_50km": 285000,
+        "industrial_zone_proximity": 0.7341572601776529,
+        "environmental_constraints": 0.6181118782079401
+      }
+    ],
+    "total_energy_output": 454836932.7909907,
+    "total_transport_cost": 116009631668362.5,
+    "total_emissions_avoided": 78098618.9900954,
+    "total_cost": 386698772227875.0,
+    "roi_years": 4474.553358280199
+  },
+  {
+    "plant_type": "anaerobic_digestion",
+    "optimal_locations": [
+      {
+        "id": "fujairah_4",
+        "emirate": "Fujairah",
+        "land_cost": 178.9867704998553,
+        "grid_distance": 28.183311238179602,
+        "population_radius_50km": 285000,
+        "industrial_zone_proximity": 0.7341572601776529,
+        "environmental_constraints": 0.6181118782079401
+      },
+      {
+        "id": "fujairah_2",
+        "emirate": "Fujairah",
+        "land_cost": 126.0645366519501,
+        "grid_distance": 49.93573888918224,
+        "population_radius_50km": 285000,
+        "industrial_zone_proximity": 0.45804246526859016,
+        "environmental_constraints": 0.23879076420495948
+      },
+      {
+        "id": "fujairah_4",
+        "emirate": "Fujairah",
+        "land_cost": 178.9867704998553,
+        "grid_distance": 28.183311238179602,
+        "population_radius_50km": 285000,
+        "industrial_zone_proximity": 0.7341572601776529,
+        "environmental_constraints": 0.6181118782079401
+      },
+      {
+        "id": "fujairah_3",
+        "emirate": "Fujairah",
+        "land_cost": 67.14165136611491,
+        "grid_distance": 11.569566037424806,
+        "population_radius_50km": 285000,
+        "industrial_zone_proximity": 0.6228565801948555,
+        "environmental_constraints": 0.8739617216559217
+      },
+      {
+        "id": "fujairah_3",
+        "emirate": "Fujairah",
+        "land_cost": 67.14165136611491,
+        "grid_distance": 11.569566037424806,
+        "population_radius_50km": 285000,
+        "industrial_zone_proximity": 0.6228565801948555,
+        "environmental_constraints": 0.8739617216559217
+      },
+      {
+        "id": "fujairah_3",
+        "emirate": "Fujairah",
+        "land_cost": 67.14165136611491,
+        "grid_distance": 11.569566037424806,
+        "population_radius_50km": 285000,
+        "industrial_zone_proximity": 0.6228565801948555,
+        "environmental_constraints": 0.8739617216559217
+      },
+      {
+        "id": "ras_al_khaimah_2",
+        "emirate": "Ras Al Khaimah",
+        "land_cost": 189.0682612134938,
+        "grid_distance": 17.411454640183564,
+        "population_radius_50km": 345000,
+        "industrial_zone_proximity": 0.13746834175812786,
+        "environmental_constraints": 0.25226874643997454
+      },
+      {
+        "id": "fujairah_4",
+        "emirate": "Fujairah",
+        "land_cost": 178.9867704998553,
+        "grid_distance": 28.183311238179602,
+        "population_radius_50km": 285000,
+        "industrial_zone_proximity": 0.7341572601776529,
+        "environmental_constraints": 0.6181118782079401
+      }
+    ],
+    "total_energy_output": 69123928.7984495,
+    "total_transport_cost": 47187514916760.945,
+    "total_emissions_avoided": 260572617.08966896,
+    "total_cost": 157291716389203.16,
+    "roi_years": 3118.4235179933294
+  },
+  {
+    "plant_type": "gasification",
+    "optimal_locations": [
+      {
+        "id": "fujairah_4",
+        "emirate": "Fujairah",
+        "land_cost": 178.9867704998553,
+        "grid_distance": 28.183311238179602,
+        "population_radius_50km": 285000,
+        "industrial_zone_proximity": 0.7341572601776529,
+        "environmental_constraints": 0.6181118782079401
+      },
+      {
+        "id": "fujairah_4",
+        "emirate": "Fujairah",
+        "land_cost": 178.9867704998553,
+        "grid_distance": 28.183311238179602,
+        "population_radius_50km": 285000,
+        "industrial_zone_proximity": 0.7341572601776529,
+        "environmental_constraints": 0.6181118782079401
+      },
+      {
+        "id": "fujairah_4",
+        "emirate": "Fujairah",
+        "land_cost": 178.9867704998553,
+        "grid_distance": 28.183311238179602,
+        "population_radius_50km": 285000,
+        "industrial_zone_proximity": 0.7341572601776529,
+        "environmental_constraints": 0.6181118782079401
+      },
+      {
+        "id": "abu_dhabi_1",
+        "emirate": "Abu Dhabi",
+        "land_cost": 168.12426620224664,
+        "grid_distance": 34.441180210456224,
+        "population_radius_50km": 153079.919810336,
+        "industrial_zone_proximity": 0.22218537524963639,
+        "environmental_constraints": 0.6899325151188593
+      },
+      {
+        "id": "fujairah_3",
+        "emirate": "Fujairah",
+        "land_cost": 67.14165136611491,
+        "grid_distance": 11.569566037424806,
+        "population_radius_50km": 285000,
+        "industrial_zone_proximity": 0.6228565801948555,
+        "environmental_constraints": 0.8739617216559217
+      },
+      {
+        "id": "fujairah_4",
+        "emirate": "Fujairah",
+        "land_cost": 178.9867704998553,
+        "grid_distance": 28.183311238179602,
+        "population_radius_50km": 285000,
+        "industrial_zone_proximity": 0.7341572601776529,
+        "environmental_constraints": 0.6181118782079401
+      },
+      {
+        "id": "fujairah_2",
+        "emirate": "Fujairah",
+        "land_cost": 126.0645366519501,
+        "grid_distance": 49.93573888918224,
+        "population_radius_50km": 285000,
+        "industrial_zone_proximity": 0.45804246526859016,
+        "environmental_constraints": 0.23879076420495948
+      },
+      {
+        "id": "fujairah_2",
+        "emirate": "Fujairah",
+        "land_cost": 126.0645366519501,
+        "grid_distance": 49.93573888918224,
+        "population_radius_50km": 285000,
+        "industrial_zone_proximity": 0.45804246526859016,
+        "environmental_constraints": 0.23879076420495948
+      }
+    ],
+    "total_energy_output": 525992044.3800788,
+    "total_transport_cost": 83863691559570.06,
+    "total_emissions_avoided": 97623273.73761925,
+    "total_cost": 279545638531900.22,
+    "roi_years": 2766.746292040335
+  }
+]

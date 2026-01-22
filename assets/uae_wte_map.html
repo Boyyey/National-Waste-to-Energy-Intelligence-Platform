@@ -1,0 +1,1634 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f1d1c0749f70381141ff9bcfd7f77cd7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f1d1c0749f70381141ff9bcfd7f77cd7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f1d1c0749f70381141ff9bcfd7f77cd7 = L.map(
+                "map_f1d1c0749f70381141ff9bcfd7f77cd7",
+                {
+                    center: [24.0, 54.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ddf399110c070c1f649ec50b6c3e629e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ddf399110c070c1f649ec50b6c3e629e.addTo(map_f1d1c0749f70381141ff9bcfd7f77cd7);
+        
+    
+            var polygon_0984baf6ab13587db30b62b6b0080690 = L.polygon(
+                [[22.5, 51.5], [22.5, 56.5], [26.0, 56.5], [26.0, 51.5], [22.5, 51.5]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_f1d1c0749f70381141ff9bcfd7f77cd7);
+        
+    
+        var popup_1dc5cb79d6a415225182f91dbd3f0ed0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9b833d6818f7bfb0b66e37393327cb4c = $(`<div id="html_9b833d6818f7bfb0b66e37393327cb4c" style="width: 100.0%; height: 100.0%;">UAE Boundaries</div>`)[0];
+                popup_1dc5cb79d6a415225182f91dbd3f0ed0.setContent(html_9b833d6818f7bfb0b66e37393327cb4c);
+            
+        
+
+        polygon_0984baf6ab13587db30b62b6b0080690.bindPopup(popup_1dc5cb79d6a415225182f91dbd3f0ed0)
+        ;
+
+        
+    
+    
+            var marker_6cdb3c5b83acbf080fc1bf7992f86a87 = L.marker(
+                [24.4667, 54.3667],
+                {
+}
+            ).addTo(map_f1d1c0749f70381141ff9bcfd7f77cd7);
+        
+    
+            var icon_d57e987731f004e48a77b41f388a74c8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_90a70fbfad85984a0ef8a9a1186d837e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6a39b54f16e1044dc4a88703e7d330ce = $(`<div id="html_6a39b54f16e1044dc4a88703e7d330ce" style="width: 100.0%; height: 100.0%;">             <div style='font-family: Arial; width: 200px'>                 <h4 style='color: #1f77b4; margin: 0'>                     Abu Dhabi                 </h4>                 <p style='margin: 5px 0'>                     <strong>Population:</strong> 3,789,000<br>                     <strong>Area:</strong> 97,200 km²<br>                     <strong>GDP/capita:</strong> $117,000                 </p>             </div>             </div>`)[0];
+                popup_90a70fbfad85984a0ef8a9a1186d837e.setContent(html_6a39b54f16e1044dc4a88703e7d330ce);
+            
+        
+
+        marker_6cdb3c5b83acbf080fc1bf7992f86a87.bindPopup(popup_90a70fbfad85984a0ef8a9a1186d837e)
+        ;
+
+        
+    
+    
+            marker_6cdb3c5b83acbf080fc1bf7992f86a87.bindTooltip(
+                `<div>
+                     Abu Dhabi: 3,789,000 people
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6cdb3c5b83acbf080fc1bf7992f86a87.setIcon(icon_d57e987731f004e48a77b41f388a74c8);
+            
+    
+            var marker_cd79405b3b306582013aa9cafa0521b1 = L.marker(
+                [25.2769, 55.2962],
+                {
+}
+            ).addTo(map_f1d1c0749f70381141ff9bcfd7f77cd7);
+        
+    
+            var icon_176bcbf63af5a6409cebb5eb0b7dc1f4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_225cd424a8f830c64ccbd428ae29a2e9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_48f6fa38e5c2dd06ab7891ff9af5af72 = $(`<div id="html_48f6fa38e5c2dd06ab7891ff9af5af72" style="width: 100.0%; height: 100.0%;">             <div style='font-family: Arial; width: 200px'>                 <h4 style='color: #ff7f0e; margin: 0'>                     Dubai                 </h4>                 <p style='margin: 5px 0'>                     <strong>Population:</strong> 3,660,000<br>                     <strong>Area:</strong> 4,110 km²<br>                     <strong>GDP/capita:</strong> $44,000                 </p>             </div>             </div>`)[0];
+                popup_225cd424a8f830c64ccbd428ae29a2e9.setContent(html_48f6fa38e5c2dd06ab7891ff9af5af72);
+            
+        
+
+        marker_cd79405b3b306582013aa9cafa0521b1.bindPopup(popup_225cd424a8f830c64ccbd428ae29a2e9)
+        ;
+
+        
+    
+    
+            marker_cd79405b3b306582013aa9cafa0521b1.bindTooltip(
+                `<div>
+                     Dubai: 3,660,000 people
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cd79405b3b306582013aa9cafa0521b1.setIcon(icon_176bcbf63af5a6409cebb5eb0b7dc1f4);
+            
+    
+            var marker_779fadc6a22bb50fbd445fb7ddad31a0 = L.marker(
+                [25.3714, 55.4064],
+                {
+}
+            ).addTo(map_f1d1c0749f70381141ff9bcfd7f77cd7);
+        
+    
+            var icon_d46beb987fec9bc9a1dba203f7cb71fe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e275cdb03018a7818d89eaefad2a4305 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5e1ab09e30145b4ee3f407707e5cc878 = $(`<div id="html_5e1ab09e30145b4ee3f407707e5cc878" style="width: 100.0%; height: 100.0%;">             <div style='font-family: Arial; width: 200px'>                 <h4 style='color: #2ca02c; margin: 0'>                     Sharjah                 </h4>                 <p style='margin: 5px 0'>                     <strong>Population:</strong> 1,800,000<br>                     <strong>Area:</strong> 2,590 km²<br>                     <strong>GDP/capita:</strong> $32,000                 </p>             </div>             </div>`)[0];
+                popup_e275cdb03018a7818d89eaefad2a4305.setContent(html_5e1ab09e30145b4ee3f407707e5cc878);
+            
+        
+
+        marker_779fadc6a22bb50fbd445fb7ddad31a0.bindPopup(popup_e275cdb03018a7818d89eaefad2a4305)
+        ;
+
+        
+    
+    
+            marker_779fadc6a22bb50fbd445fb7ddad31a0.bindTooltip(
+                `<div>
+                     Sharjah: 1,800,000 people
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_779fadc6a22bb50fbd445fb7ddad31a0.setIcon(icon_d46beb987fec9bc9a1dba203f7cb71fe);
+            
+    
+            var marker_32046263542fa07c87f36feae8799cc9 = L.marker(
+                [25.4181, 55.4444],
+                {
+}
+            ).addTo(map_f1d1c0749f70381141ff9bcfd7f77cd7);
+        
+    
+            var icon_7b0bc9a7603828f75bd15af4266bcdb3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_29a0e7cda7e89270e5aceed29701ff3b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_59a69a41da4d1bbf102211d9ac9c94ee = $(`<div id="html_59a69a41da4d1bbf102211d9ac9c94ee" style="width: 100.0%; height: 100.0%;">             <div style='font-family: Arial; width: 200px'>                 <h4 style='color: #d62728; margin: 0'>                     Ajman                 </h4>                 <p style='margin: 5px 0'>                     <strong>Population:</strong> 504,000<br>                     <strong>Area:</strong> 460 km²<br>                     <strong>GDP/capita:</strong> $28,000                 </p>             </div>             </div>`)[0];
+                popup_29a0e7cda7e89270e5aceed29701ff3b.setContent(html_59a69a41da4d1bbf102211d9ac9c94ee);
+            
+        
+
+        marker_32046263542fa07c87f36feae8799cc9.bindPopup(popup_29a0e7cda7e89270e5aceed29701ff3b)
+        ;
+
+        
+    
+    
+            marker_32046263542fa07c87f36feae8799cc9.bindTooltip(
+                `<div>
+                     Ajman: 504,000 people
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_32046263542fa07c87f36feae8799cc9.setIcon(icon_7b0bc9a7603828f75bd15af4266bcdb3);
+            
+    
+            var marker_f43f2bc518facf102dda026ee4365158 = L.marker(
+                [25.5647, 55.5552],
+                {
+}
+            ).addTo(map_f1d1c0749f70381141ff9bcfd7f77cd7);
+        
+    
+            var icon_312abd52c533b0a15ae3548111929093 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e40b397c5192c6dcff54ecbbbaa4f2a4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f8cc049cf7ee4773f42efeafc5af110e = $(`<div id="html_f8cc049cf7ee4773f42efeafc5af110e" style="width: 100.0%; height: 100.0%;">             <div style='font-family: Arial; width: 200px'>                 <h4 style='color: #9467bd; margin: 0'>                     Umm Al Quwain                 </h4>                 <p style='margin: 5px 0'>                     <strong>Population:</strong> 290,000<br>                     <strong>Area:</strong> 720 km²<br>                     <strong>GDP/capita:</strong> $26,000                 </p>             </div>             </div>`)[0];
+                popup_e40b397c5192c6dcff54ecbbbaa4f2a4.setContent(html_f8cc049cf7ee4773f42efeafc5af110e);
+            
+        
+
+        marker_f43f2bc518facf102dda026ee4365158.bindPopup(popup_e40b397c5192c6dcff54ecbbbaa4f2a4)
+        ;
+
+        
+    
+    
+            marker_f43f2bc518facf102dda026ee4365158.bindTooltip(
+                `<div>
+                     Umm Al Quwain: 290,000 people
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f43f2bc518facf102dda026ee4365158.setIcon(icon_312abd52c533b0a15ae3548111929093);
+            
+    
+            var marker_fbc5ee4dceb90b7af224f1114c2dd4eb = L.marker(
+                [25.7895, 55.9432],
+                {
+}
+            ).addTo(map_f1d1c0749f70381141ff9bcfd7f77cd7);
+        
+    
+            var icon_a472b88ea61d758103e2d12df5becb2b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_41b35514f0443e201ec0bd75e2df04d9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5b51f4255f67c6a11a532ae81b11f71a = $(`<div id="html_5b51f4255f67c6a11a532ae81b11f71a" style="width: 100.0%; height: 100.0%;">             <div style='font-family: Arial; width: 200px'>                 <h4 style='color: #8c564b; margin: 0'>                     Ras Al Khaimah                 </h4>                 <p style='margin: 5px 0'>                     <strong>Population:</strong> 345,000<br>                     <strong>Area:</strong> 1,684 km²<br>                     <strong>GDP/capita:</strong> $29,000                 </p>             </div>             </div>`)[0];
+                popup_41b35514f0443e201ec0bd75e2df04d9.setContent(html_5b51f4255f67c6a11a532ae81b11f71a);
+            
+        
+
+        marker_fbc5ee4dceb90b7af224f1114c2dd4eb.bindPopup(popup_41b35514f0443e201ec0bd75e2df04d9)
+        ;
+
+        
+    
+    
+            marker_fbc5ee4dceb90b7af224f1114c2dd4eb.bindTooltip(
+                `<div>
+                     Ras Al Khaimah: 345,000 people
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fbc5ee4dceb90b7af224f1114c2dd4eb.setIcon(icon_a472b88ea61d758103e2d12df5becb2b);
+            
+    
+            var marker_91dfe55a3305d7489b18fcbc17c3429b = L.marker(
+                [25.1164, 56.3215],
+                {
+}
+            ).addTo(map_f1d1c0749f70381141ff9bcfd7f77cd7);
+        
+    
+            var icon_82c9911dfffed5740fcfe8bc7b6d5a84 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fe7880a39e9d5e2066db4a75da98a95c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cccde2412c64a95093edf73aed36c861 = $(`<div id="html_cccde2412c64a95093edf73aed36c861" style="width: 100.0%; height: 100.0%;">             <div style='font-family: Arial; width: 200px'>                 <h4 style='color: #e377c2; margin: 0'>                     Fujairah                 </h4>                 <p style='margin: 5px 0'>                     <strong>Population:</strong> 285,000<br>                     <strong>Area:</strong> 1,450 km²<br>                     <strong>GDP/capita:</strong> $31,000                 </p>             </div>             </div>`)[0];
+                popup_fe7880a39e9d5e2066db4a75da98a95c.setContent(html_cccde2412c64a95093edf73aed36c861);
+            
+        
+
+        marker_91dfe55a3305d7489b18fcbc17c3429b.bindPopup(popup_fe7880a39e9d5e2066db4a75da98a95c)
+        ;
+
+        
+    
+    
+            marker_91dfe55a3305d7489b18fcbc17c3429b.bindTooltip(
+                `<div>
+                     Fujairah: 285,000 people
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_91dfe55a3305d7489b18fcbc17c3429b.setIcon(icon_82c9911dfffed5740fcfe8bc7b6d5a84);
+            
+    
+            var heat_map_63f7401cac75ab0844e62a07618faf43 = L.heatLayer(
+                [[24.661219597144466, 54.46188155314009], [24.50666741891516, 54.288311120486455], [24.299270328371573, 54.351511158156235], [24.314962262455552, 54.25753658774962], [24.35094598541187, 54.51131658626185], [24.41824684468977, 54.513298406149524], [24.300394880784985, 54.22554583213319], [24.28627067287023, 54.41226198264937], [24.37409684120579, 54.31480026944562], [24.271091170226, 54.385183950751156], [24.391273139486458, 54.258396158226574], [24.498401001827098, 54.35499832441272], [24.553860558700837, 54.543950663406825], [24.584262312456353, 54.492101082931036], [24.5043837787856, 54.31176796889664], [24.370199936860352, 54.274853138786014], [24.46210809602648, 54.55737870022965], [24.546945401522205, 54.54737834592535], [24.58755929538862, 54.519323150637675], [24.30350408532354, 54.240114232443396], [24.628942535704635, 54.34190505536016], [24.37992730986557, 54.1954400329764], [24.428109971991432, 54.42315608209655], [24.572778792195702, 54.253895849164586], [24.47336129737594, 54.29994330085844], [24.558858243835314, 54.21970828315795], [24.59259848502435, 54.21458909707621], [24.298196415031214, 54.29204660404768], [24.348674172423728, 54.472001473628325], [24.353078048251547, 54.26702994301347], [24.629045250473435, 54.23744360861469], [24.560507858757262, 54.420679356567405], [24.640767337018346, 54.27963595187832], [24.269330762466296, 54.202400167985125], [24.44919224244187, 54.24566097775433], [24.351098751377307, 54.565520629000645], [24.422818379457624, 54.369746626346576], [24.2724268046194, 54.337797296666324], [24.318042137250778, 54.532366630213765], [24.644951083837455, 54.523181487062686], [24.549377874385044, 54.23095704475867], [24.554946397857567, 54.19583374345719], [24.297489790518398, 54.23194635520046], [24.36189798909862, 54.46451006606006], [24.27618160999578, 54.46060034633644], [24.477529043678263, 54.28000320671933], [24.305482704210167, 54.2138962797682], [24.312672202509155, 54.21009728529405], [24.464240219877144, 54.50664079064733], [24.316136876153625, 54.17622688719244], [24.289323939325232, 54.327095223981104], [24.64165428378342, 54.440474024064805], [24.623588706439108, 54.460571635041106], [24.385416027522698, 54.33191665076138], [24.624053886348683, 54.16949923600621], [24.5387231596274, 54.558094750866296], [24.577572235813832, 54.348656716330844], [24.567047483953733, 54.42667936426852], [24.53741664350267, 54.36768326981396], [24.376817464972827, 54.516993324533], [24.289161436874647, 54.22654010255621], [24.64918265171732, 54.260188814244245], [24.61132544317205, 54.389639577820645], [24.289037470450662, 54.553850238259805], [24.50311352591962, 54.41470494129685], [24.447317433430236, 54.33783839079942], [24.55913179626398, 54.41841388030931], [24.293365066601407, 54.540927792914594], [24.409873995131786, 54.275984806984304], [24.31591139766673, 54.50816075549243], [24.46351983420379, 54.485695254987164], [24.303246417258975, 54.321110942983736], [24.659864460432356, 54.469856908172154], [24.338336965971315, 54.4774510600954], [24.466651367921042, 54.205379095115404], [24.48818033606846, 54.50227670492666], [24.59475603591655, 54.35978414440929], [24.652075504310634, 54.46803472230369], [24.33097493832941, 54.31509266151499], [24.49340970292429, 54.31399151252519], [24.4988790647495, 54.345120901988395], [24.602998649207013, 54.18874253808017], [24.296924051150004, 54.41860690392455], [24.655049506561582, 54.45983397268671], [24.304010946950285, 54.23720051569128], [24.413734191494935, 54.20002021504909], [24.60392523663524, 54.30017268646368], [24.47809786010679, 54.26730640157618], [24.515602328821643, 54.385866791580064], [24.326075474092406, 54.468821564628925], [24.31125776029304, 54.51414905713484], [24.299617091135275, 54.34507117110343], [24.393377851707175, 54.47625289268306], [24.567365989750506, 54.546813580894984], [24.297894242566006, 54.46652948058844], [24.607042672085793, 54.30201144927135], [24.55473417739557, 54.46094473393222], [24.460645116073284, 54.24462707420381], [24.66247725759311, 54.21977720070946], [24.29795988713654, 54.22458012056647], [24.4257245636359, 54.50826901955171], [24.402927359770967, 54.29247434567973], [24.6182413332435, 54.19189923803354], [24.522873967247676, 54.233302926211444], [24.316775316122143, 54.47576143182328], [24.497729200612188, 54.4892776378717], [24.565458640953473, 54.55038032539828], [24.55372322120335, 54.23459099361814], [24.4334722663836, 54.199724160179564], [24.432113810143324, 54.25094392670198], [24.2667436545909, 54.55672494077696], [24.473263446301353, 54.436772094016206], [24.484628202697333, 54.23304143820841], [24.560529440837275, 54.36139631561744], [25.569545982877088, 55.554056626775754], [25.258434844860204, 55.56996937303575], [25.24213797481096, 55.41027755860956], [25.38666890431102, 55.49113562338019], [25.25627204243196, 55.539217341510366], [25.23837476095404, 55.585947565813626], [25.552467349055547, 55.36411818872314], [25.409207835418265, 55.44519347786201], [25.384250799039215, 55.241575031301714], [25.3382337532845, 55.20179076578593], [25.165840218934058, 55.333868066659136], [25.082298929717304, 55.43523470867578], [25.237502922188284, 55.32925292141893], [25.456887156967408, 55.23360827619364], [25.443546415214296, 55.17798274938381], [25.354939927933273, 55.100930381687434], [25.270544922193555, 55.48477162904392], [25.163628848161586, 55.336480361509494], [25.271035119605514, 55.45415063230623], [25.11034120505752, 55.44949046385185], [25.26749352318973, 55.478973705511486], [25.223114499099182, 55.22679215532437], [25.34390149754014, 55.48012371866578], [25.317093012016542, 55.39202893358123], [25.328272584939462, 55.29837751888016], [25.191201642395306, 55.393560638809795], [25.210393730289837, 55.18665135777802], [25.473890484087573, 55.16766382135638], [25.407474902734222, 55.48808301291681], [25.257528109356933, 55.300964607908604], [25.40345923716123, 55.248460767951386], [25.198719266140643, 55.36194168790274], [25.289586720209133, 55.36193718970069], [25.105048309233354, 55.309213516876795], [25.278092562601447, 55.319415492069204], [25.38488913384491, 55.20694235425155], [25.27572510719714, 55.37595029795749], [25.30673714945528, 55.15937728319889], [25.389299554567415, 55.23225151774254], [25.142928129412066, 55.42053226019973], [25.100830789985743, 55.250824178874616], [25.200190515474755, 55.43229299223691], [25.349928739421685, 55.236777965591585], [25.089343630610767, 55.09752420905474], [25.18030187522244, 55.442172310398995], [25.467115942282387, 55.43456787049089], [25.40669396613964, 55.15199898788653], [25.22799827535815, 55.28979989388105], [25.43861176814221, 55.30791992506481], [25.38525248982926, 55.104574782149015], [25.101645791800884, 55.11726487876385], [25.397845747708313, 55.28070299214032], [25.151769468536724, 55.11701127130725], [25.329973338688998, 55.12864265088015], [25.21419115505682, 55.45579320884289], [25.178948095988282, 55.238627933912404], [25.258166940561726, 55.444630428534495], [25.108309919880337, 55.32196017890672], [25.15818698217957, 55.13280535157177], [25.107517204158583, 55.28610908697305], [25.26392185188591, 55.48805299522814], [25.336205234343605, 55.16840100634203], [25.23116946194816, 55.34496895506615], [25.33289854033404, 55.43763545819561], [25.27318318734586, 55.27068168806499], [25.359944239823058, 55.239980107477564], [25.305920480689792, 55.261899833711304], [25.380137828253854, 55.208683418869505], [25.11143399722361, 55.49269880315491], [25.202278500343624, 55.175099669871436], [25.107284054890368, 55.23752376931218], [25.173379004772595, 55.29639952810281], [25.44566274384276, 55.25518286388332], [25.130031863832173, 55.09995028634281], [25.143104564465375, 55.201742816796774], [25.20018367749566, 55.23813166110076], [25.233579934727064, 55.333639627299014], [25.38193235204429, 55.22260041951702], [25.189888239317266, 55.163666845580835], [25.2703869045237, 55.343308720518024], [25.18854155227722, 55.29685826843699], [25.413233341393266, 55.11089152688397], [25.179997939632294, 55.27657161234054], [25.088703502759742, 55.11605290353005], [25.381940036752077, 55.45785709070628], [25.134018668000767, 55.1140761286604], [25.086231086983005, 55.12597776626555], [25.450596656946203, 55.191608193201986], [25.301714161522103, 55.294324463132696], [25.121027873701408, 55.331775714715846], [25.26852494547095, 55.21246443462014], [25.153270744310394, 55.39149802436401], [25.417204971771657, 55.430629368378845], [25.388535866831354, 55.4188741245984], [25.316050320619194, 55.42970834228782], [25.122829700906653, 55.43719862154885], [25.344276673748602, 55.482896095085806], [25.295923834226347, 56.141632599739275], [25.0916017044949, 56.12319451253766], [24.97732149085919, 56.41229721410632], [24.933581180843326, 56.36350895524752], [25.964580955035395, 55.985762568118886], [25.83642691833924, 56.11916913820058], [25.692392416374933, 55.88305291476234], [25.910337573939284, 55.77303420339711], [25.836838743708793, 56.111619747968504], [25.449619089230907, 55.27108808806825], [25.514208800757864, 55.4582120275889], [25.313518684635138, 55.318414605077386], [25.20591145369504, 55.50472540666438], [25.519292821268486, 55.31391725412075], [25.35477138829686, 55.23516302199167], [25.476441473522268, 55.557904157504936], [25.19522644812889, 55.46642739173522], [25.41941436115559, 55.52159642058856], [25.3638835384062, 55.341464571424346], [25.401936608232262, 55.480982936868834], [25.231115019957162, 55.45285411604657], [25.175899452835523, 55.41994254341849], [25.51883650591985, 55.28816481168187], [25.376756814123265, 55.29448580357344], [25.50632365873563, 55.43290179154657], [25.359802579595932, 55.46006791948122], [25.31514578029961, 55.513368374678514], [25.212382568688206, 55.26081414252848], [25.181676551644564, 55.56940385935319], [25.2582027810521, 55.25145689841404], [25.414250485506322, 55.32683388818481], [25.507010575529645, 55.41680164245595], [25.351235722689566, 55.45041387184946], [25.29299775531883, 55.604087841765846], [25.17452131470923, 55.47210497240832], [25.365649104195878, 55.255204424498544], [25.446524503512535, 55.260167024632764], [25.21962654593755, 55.21580206945061], [25.27757398506791, 55.31135780336136], [25.203913374378885, 55.58933448393758], [25.560407435334202, 55.395953760343374], [25.391220312655385, 55.567200982422584], [25.389241629882427, 55.373404398705446], [25.595480875474095, 55.729704091679665]],
+                {
+  "minOpacity": 0.4,
+  "maxZoom": 18,
+  "radius": 25,
+  "blur": 15,
+  "gradient": {
+  0.2: "blue",
+  0.4: "cyan",
+  0.6: "lime",
+  0.8: "yellow",
+  1.0: "red",
+},
+}
+            );
+        
+    
+            heat_map_63f7401cac75ab0844e62a07618faf43.addTo(map_f1d1c0749f70381141ff9bcfd7f77cd7);
+        
+    
+            var marker_25ef3c4374a27549f10124ee06724d66 = L.marker(
+                [25.324269748351853, 52.12931882590543],
+                {
+}
+            ).addTo(map_f1d1c0749f70381141ff9bcfd7f77cd7);
+        
+    
+            var icon_c5a1634cac0e68a736517d93c8c9ff4e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "fire",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_99f26dff4341fad6c23acddf99097e79 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_02d7142c33a371860fa0559907672c99 = $(`<div id="html_02d7142c33a371860fa0559907672c99" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial; width: 250px'>                     <h4 style='color: red; margin: 0'>                         Incineration Plant #1                     </h4>                     <p style='margin: 5px 0'>                         <strong>Emirate:</strong> Fujairah<br>                         <strong>Energy Output:</strong> 454,836,933 kWh/day<br>                         <strong>CO₂ Avoided:</strong> 78,098,619 kg/day<br>                         <strong>ROI:</strong> 4474.6 years                     </p>                 </div>                 </div>`)[0];
+                popup_99f26dff4341fad6c23acddf99097e79.setContent(html_02d7142c33a371860fa0559907672c99);
+            
+        
+
+        marker_25ef3c4374a27549f10124ee06724d66.bindPopup(popup_99f26dff4341fad6c23acddf99097e79)
+        ;
+
+        
+    
+    
+            marker_25ef3c4374a27549f10124ee06724d66.bindTooltip(
+                `<div>
+                     Incineration Plant
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_25ef3c4374a27549f10124ee06724d66.setIcon(icon_c5a1634cac0e68a736517d93c8c9ff4e);
+            
+    
+            var marker_f671a93a2db1bcf8c6eb265b78329428 = L.marker(
+                [24.451217096273478, 54.97099564044046],
+                {
+}
+            ).addTo(map_f1d1c0749f70381141ff9bcfd7f77cd7);
+        
+    
+            var icon_55745f19679b5e760282ffcc182bb747 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "fire",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e952ce7b620724314163f73c6f33009b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ed446655fa3501cd44deec84320af772 = $(`<div id="html_ed446655fa3501cd44deec84320af772" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial; width: 250px'>                     <h4 style='color: red; margin: 0'>                         Incineration Plant #2                     </h4>                     <p style='margin: 5px 0'>                         <strong>Emirate:</strong> Dubai<br>                         <strong>Energy Output:</strong> 454,836,933 kWh/day<br>                         <strong>CO₂ Avoided:</strong> 78,098,619 kg/day<br>                         <strong>ROI:</strong> 4474.6 years                     </p>                 </div>                 </div>`)[0];
+                popup_e952ce7b620724314163f73c6f33009b.setContent(html_ed446655fa3501cd44deec84320af772);
+            
+        
+
+        marker_f671a93a2db1bcf8c6eb265b78329428.bindPopup(popup_e952ce7b620724314163f73c6f33009b)
+        ;
+
+        
+    
+    
+            marker_f671a93a2db1bcf8c6eb265b78329428.bindTooltip(
+                `<div>
+                     Incineration Plant
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f671a93a2db1bcf8c6eb265b78329428.setIcon(icon_55745f19679b5e760282ffcc182bb747);
+            
+    
+            var marker_3cf4f45fe4b0194f9cb9031a07727a07 = L.marker(
+                [24.331040174825247, 54.65396630189286],
+                {
+}
+            ).addTo(map_f1d1c0749f70381141ff9bcfd7f77cd7);
+        
+    
+            var icon_d2aa0651101dfd712ade4c66c8236cac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "fire",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5430d50e374a79bc58bebf705e72e5b2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_66d44bef71819e15d26a740a11118c16 = $(`<div id="html_66d44bef71819e15d26a740a11118c16" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial; width: 250px'>                     <h4 style='color: red; margin: 0'>                         Incineration Plant #3                     </h4>                     <p style='margin: 5px 0'>                         <strong>Emirate:</strong> Fujairah<br>                         <strong>Energy Output:</strong> 454,836,933 kWh/day<br>                         <strong>CO₂ Avoided:</strong> 78,098,619 kg/day<br>                         <strong>ROI:</strong> 4474.6 years                     </p>                 </div>                 </div>`)[0];
+                popup_5430d50e374a79bc58bebf705e72e5b2.setContent(html_66d44bef71819e15d26a740a11118c16);
+            
+        
+
+        marker_3cf4f45fe4b0194f9cb9031a07727a07.bindPopup(popup_5430d50e374a79bc58bebf705e72e5b2)
+        ;
+
+        
+    
+    
+            marker_3cf4f45fe4b0194f9cb9031a07727a07.bindTooltip(
+                `<div>
+                     Incineration Plant
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3cf4f45fe4b0194f9cb9031a07727a07.setIcon(icon_d2aa0651101dfd712ade4c66c8236cac);
+            
+    
+            var marker_0e5a111a38040392a1b94f3e69d727c6 = L.marker(
+                [23.956068558380657, 54.170225696371986],
+                {
+}
+            ).addTo(map_f1d1c0749f70381141ff9bcfd7f77cd7);
+        
+    
+            var icon_746d7e034164e7acc2bfd4773be17b60 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "fire",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a61f1b3326faf7ac1ad96178e28602a1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1f6e74c2bee11d39459e17f2a5e36652 = $(`<div id="html_1f6e74c2bee11d39459e17f2a5e36652" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial; width: 250px'>                     <h4 style='color: red; margin: 0'>                         Incineration Plant #4                     </h4>                     <p style='margin: 5px 0'>                         <strong>Emirate:</strong> Abu Dhabi<br>                         <strong>Energy Output:</strong> 454,836,933 kWh/day<br>                         <strong>CO₂ Avoided:</strong> 78,098,619 kg/day<br>                         <strong>ROI:</strong> 4474.6 years                     </p>                 </div>                 </div>`)[0];
+                popup_a61f1b3326faf7ac1ad96178e28602a1.setContent(html_1f6e74c2bee11d39459e17f2a5e36652);
+            
+        
+
+        marker_0e5a111a38040392a1b94f3e69d727c6.bindPopup(popup_a61f1b3326faf7ac1ad96178e28602a1)
+        ;
+
+        
+    
+    
+            marker_0e5a111a38040392a1b94f3e69d727c6.bindTooltip(
+                `<div>
+                     Incineration Plant
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0e5a111a38040392a1b94f3e69d727c6.setIcon(icon_746d7e034164e7acc2bfd4773be17b60);
+            
+    
+            var marker_b64324169710d34e7b1eafeac54399a1 = L.marker(
+                [24.4217928423047, 53.514368735559046],
+                {
+}
+            ).addTo(map_f1d1c0749f70381141ff9bcfd7f77cd7);
+        
+    
+            var icon_d4b67235ff0048c26504fa205723acb1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "fire",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b22596295b269b88812bef2d7b0b4b4a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0af3fb591f1e74f992f137c144c00de0 = $(`<div id="html_0af3fb591f1e74f992f137c144c00de0" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial; width: 250px'>                     <h4 style='color: red; margin: 0'>                         Incineration Plant #5                     </h4>                     <p style='margin: 5px 0'>                         <strong>Emirate:</strong> Fujairah<br>                         <strong>Energy Output:</strong> 454,836,933 kWh/day<br>                         <strong>CO₂ Avoided:</strong> 78,098,619 kg/day<br>                         <strong>ROI:</strong> 4474.6 years                     </p>                 </div>                 </div>`)[0];
+                popup_b22596295b269b88812bef2d7b0b4b4a.setContent(html_0af3fb591f1e74f992f137c144c00de0);
+            
+        
+
+        marker_b64324169710d34e7b1eafeac54399a1.bindPopup(popup_b22596295b269b88812bef2d7b0b4b4a)
+        ;
+
+        
+    
+    
+            marker_b64324169710d34e7b1eafeac54399a1.bindTooltip(
+                `<div>
+                     Incineration Plant
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b64324169710d34e7b1eafeac54399a1.setIcon(icon_d4b67235ff0048c26504fa205723acb1);
+            
+    
+            var marker_e42804a280ec832b52ddc07960010c51 = L.marker(
+                [23.219247210436883, 52.656655568055186],
+                {
+}
+            ).addTo(map_f1d1c0749f70381141ff9bcfd7f77cd7);
+        
+    
+            var icon_59a43be3651cc8590fcb6553db6c4df3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "fire",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2c7e106a0f343ae7ee53e0828955cdea = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_652b356bfc6fa4c94f50172a7aab80d1 = $(`<div id="html_652b356bfc6fa4c94f50172a7aab80d1" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial; width: 250px'>                     <h4 style='color: red; margin: 0'>                         Incineration Plant #6                     </h4>                     <p style='margin: 5px 0'>                         <strong>Emirate:</strong> Fujairah<br>                         <strong>Energy Output:</strong> 454,836,933 kWh/day<br>                         <strong>CO₂ Avoided:</strong> 78,098,619 kg/day<br>                         <strong>ROI:</strong> 4474.6 years                     </p>                 </div>                 </div>`)[0];
+                popup_2c7e106a0f343ae7ee53e0828955cdea.setContent(html_652b356bfc6fa4c94f50172a7aab80d1);
+            
+        
+
+        marker_e42804a280ec832b52ddc07960010c51.bindPopup(popup_2c7e106a0f343ae7ee53e0828955cdea)
+        ;
+
+        
+    
+    
+            marker_e42804a280ec832b52ddc07960010c51.bindTooltip(
+                `<div>
+                     Incineration Plant
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e42804a280ec832b52ddc07960010c51.setIcon(icon_59a43be3651cc8590fcb6553db6c4df3);
+            
+    
+            var marker_ac424bf645407f110c7b8af19a0ea3e5 = L.marker(
+                [25.166065650804534, 53.44055760950218],
+                {
+}
+            ).addTo(map_f1d1c0749f70381141ff9bcfd7f77cd7);
+        
+    
+            var icon_0af6d2033b2101e15a84131c48800699 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "fire",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0d075dfd42048e14b7cd4af9b9bcfbcc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_baef366e110657a5435ee68a79844f1a = $(`<div id="html_baef366e110657a5435ee68a79844f1a" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial; width: 250px'>                     <h4 style='color: red; margin: 0'>                         Incineration Plant #7                     </h4>                     <p style='margin: 5px 0'>                         <strong>Emirate:</strong> Fujairah<br>                         <strong>Energy Output:</strong> 454,836,933 kWh/day<br>                         <strong>CO₂ Avoided:</strong> 78,098,619 kg/day<br>                         <strong>ROI:</strong> 4474.6 years                     </p>                 </div>                 </div>`)[0];
+                popup_0d075dfd42048e14b7cd4af9b9bcfbcc.setContent(html_baef366e110657a5435ee68a79844f1a);
+            
+        
+
+        marker_ac424bf645407f110c7b8af19a0ea3e5.bindPopup(popup_0d075dfd42048e14b7cd4af9b9bcfbcc)
+        ;
+
+        
+    
+    
+            marker_ac424bf645407f110c7b8af19a0ea3e5.bindTooltip(
+                `<div>
+                     Incineration Plant
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ac424bf645407f110c7b8af19a0ea3e5.setIcon(icon_0af6d2033b2101e15a84131c48800699);
+            
+    
+            var marker_b312ca2ce9e3abf5bd2edcd8ca96a0bd = L.marker(
+                [23.2739473050487, 55.788036419070615],
+                {
+}
+            ).addTo(map_f1d1c0749f70381141ff9bcfd7f77cd7);
+        
+    
+            var icon_c8dbe7c545ab175eba6849f61bac7792 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "fire",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7a2fef841173e257ca1146e097625632 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f50a0be9fd276dc59c7fe65ffdb5bf15 = $(`<div id="html_f50a0be9fd276dc59c7fe65ffdb5bf15" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial; width: 250px'>                     <h4 style='color: red; margin: 0'>                         Incineration Plant #8                     </h4>                     <p style='margin: 5px 0'>                         <strong>Emirate:</strong> Fujairah<br>                         <strong>Energy Output:</strong> 454,836,933 kWh/day<br>                         <strong>CO₂ Avoided:</strong> 78,098,619 kg/day<br>                         <strong>ROI:</strong> 4474.6 years                     </p>                 </div>                 </div>`)[0];
+                popup_7a2fef841173e257ca1146e097625632.setContent(html_f50a0be9fd276dc59c7fe65ffdb5bf15);
+            
+        
+
+        marker_b312ca2ce9e3abf5bd2edcd8ca96a0bd.bindPopup(popup_7a2fef841173e257ca1146e097625632)
+        ;
+
+        
+    
+    
+            marker_b312ca2ce9e3abf5bd2edcd8ca96a0bd.bindTooltip(
+                `<div>
+                     Incineration Plant
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b312ca2ce9e3abf5bd2edcd8ca96a0bd.setIcon(icon_c8dbe7c545ab175eba6849f61bac7792);
+            
+    
+            var marker_c163c20b338cfbe983ad30a2828301c5 = L.marker(
+                [22.712185379814148, 52.34731811632948],
+                {
+}
+            ).addTo(map_f1d1c0749f70381141ff9bcfd7f77cd7);
+        
+    
+            var icon_d86528755ede0ec4e57c638e9bff1079 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1e3104b8ec2f9db14b9116ecf8b63f74 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ceefacb1179bbd91c2f5b50178df4b79 = $(`<div id="html_ceefacb1179bbd91c2f5b50178df4b79" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial; width: 250px'>                     <h4 style='color: green; margin: 0'>                         Anaerobic Digestion Plant #1                     </h4>                     <p style='margin: 5px 0'>                         <strong>Emirate:</strong> Fujairah<br>                         <strong>Energy Output:</strong> 69,123,929 kWh/day<br>                         <strong>CO₂ Avoided:</strong> 260,572,617 kg/day<br>                         <strong>ROI:</strong> 3118.4 years                     </p>                 </div>                 </div>`)[0];
+                popup_1e3104b8ec2f9db14b9116ecf8b63f74.setContent(html_ceefacb1179bbd91c2f5b50178df4b79);
+            
+        
+
+        marker_c163c20b338cfbe983ad30a2828301c5.bindPopup(popup_1e3104b8ec2f9db14b9116ecf8b63f74)
+        ;
+
+        
+    
+    
+            marker_c163c20b338cfbe983ad30a2828301c5.bindTooltip(
+                `<div>
+                     Anaerobic Digestion Plant
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c163c20b338cfbe983ad30a2828301c5.setIcon(icon_d86528755ede0ec4e57c638e9bff1079);
+            
+    
+            var marker_4b4fdb918a95cb4d7107b05d46c58495 = L.marker(
+                [22.898137415058738, 53.20080560527887],
+                {
+}
+            ).addTo(map_f1d1c0749f70381141ff9bcfd7f77cd7);
+        
+    
+            var icon_56d999f538aa75a136182409fc3e4110 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b42f1c43baacea28945f6999b3e3d18d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7ab1cb63c03cdb2938abd9bca13c8d20 = $(`<div id="html_7ab1cb63c03cdb2938abd9bca13c8d20" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial; width: 250px'>                     <h4 style='color: green; margin: 0'>                         Anaerobic Digestion Plant #2                     </h4>                     <p style='margin: 5px 0'>                         <strong>Emirate:</strong> Fujairah<br>                         <strong>Energy Output:</strong> 69,123,929 kWh/day<br>                         <strong>CO₂ Avoided:</strong> 260,572,617 kg/day<br>                         <strong>ROI:</strong> 3118.4 years                     </p>                 </div>                 </div>`)[0];
+                popup_b42f1c43baacea28945f6999b3e3d18d.setContent(html_7ab1cb63c03cdb2938abd9bca13c8d20);
+            
+        
+
+        marker_4b4fdb918a95cb4d7107b05d46c58495.bindPopup(popup_b42f1c43baacea28945f6999b3e3d18d)
+        ;
+
+        
+    
+    
+            marker_4b4fdb918a95cb4d7107b05d46c58495.bindTooltip(
+                `<div>
+                     Anaerobic Digestion Plant
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4b4fdb918a95cb4d7107b05d46c58495.setIcon(icon_56d999f538aa75a136182409fc3e4110);
+            
+    
+            var marker_9aa5cc1b340c4cf1c070113be76feabf = L.marker(
+                [22.7543863357777, 54.459253153230726],
+                {
+}
+            ).addTo(map_f1d1c0749f70381141ff9bcfd7f77cd7);
+        
+    
+            var icon_535f70929d46b2700e901de9531fee8f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_adac93310b742713404ba947aaf1cec9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_75275f7debd3d6cbe54859c997cd9d07 = $(`<div id="html_75275f7debd3d6cbe54859c997cd9d07" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial; width: 250px'>                     <h4 style='color: green; margin: 0'>                         Anaerobic Digestion Plant #3                     </h4>                     <p style='margin: 5px 0'>                         <strong>Emirate:</strong> Fujairah<br>                         <strong>Energy Output:</strong> 69,123,929 kWh/day<br>                         <strong>CO₂ Avoided:</strong> 260,572,617 kg/day<br>                         <strong>ROI:</strong> 3118.4 years                     </p>                 </div>                 </div>`)[0];
+                popup_adac93310b742713404ba947aaf1cec9.setContent(html_75275f7debd3d6cbe54859c997cd9d07);
+            
+        
+
+        marker_9aa5cc1b340c4cf1c070113be76feabf.bindPopup(popup_adac93310b742713404ba947aaf1cec9)
+        ;
+
+        
+    
+    
+            marker_9aa5cc1b340c4cf1c070113be76feabf.bindTooltip(
+                `<div>
+                     Anaerobic Digestion Plant
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9aa5cc1b340c4cf1c070113be76feabf.setIcon(icon_535f70929d46b2700e901de9531fee8f);
+            
+    
+            var marker_a38cd2f5fee7b80518225132705482d2 = L.marker(
+                [24.298799635280986, 54.417515366700705],
+                {
+}
+            ).addTo(map_f1d1c0749f70381141ff9bcfd7f77cd7);
+        
+    
+            var icon_3fbe042a4cdbb95f497e2d78b7130bfe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7ca83b954d04a89d571369a7f8d8cfaf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_59da71e82c6ba090b109bbb0ff88c1e7 = $(`<div id="html_59da71e82c6ba090b109bbb0ff88c1e7" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial; width: 250px'>                     <h4 style='color: green; margin: 0'>                         Anaerobic Digestion Plant #4                     </h4>                     <p style='margin: 5px 0'>                         <strong>Emirate:</strong> Fujairah<br>                         <strong>Energy Output:</strong> 69,123,929 kWh/day<br>                         <strong>CO₂ Avoided:</strong> 260,572,617 kg/day<br>                         <strong>ROI:</strong> 3118.4 years                     </p>                 </div>                 </div>`)[0];
+                popup_7ca83b954d04a89d571369a7f8d8cfaf.setContent(html_59da71e82c6ba090b109bbb0ff88c1e7);
+            
+        
+
+        marker_a38cd2f5fee7b80518225132705482d2.bindPopup(popup_7ca83b954d04a89d571369a7f8d8cfaf)
+        ;
+
+        
+    
+    
+            marker_a38cd2f5fee7b80518225132705482d2.bindTooltip(
+                `<div>
+                     Anaerobic Digestion Plant
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a38cd2f5fee7b80518225132705482d2.setIcon(icon_3fbe042a4cdbb95f497e2d78b7130bfe);
+            
+    
+            var marker_d6c25d06ef8f2635164a91645c3bcd25 = L.marker(
+                [24.05506106173063, 56.43422821315785],
+                {
+}
+            ).addTo(map_f1d1c0749f70381141ff9bcfd7f77cd7);
+        
+    
+            var icon_ffc49ff2cbc8df8d59ece073cdc5308e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6196c1b99e4c0cbf2225c5416aa3e325 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7abd3fec5efaaf5681694a5718881eff = $(`<div id="html_7abd3fec5efaaf5681694a5718881eff" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial; width: 250px'>                     <h4 style='color: green; margin: 0'>                         Anaerobic Digestion Plant #5                     </h4>                     <p style='margin: 5px 0'>                         <strong>Emirate:</strong> Fujairah<br>                         <strong>Energy Output:</strong> 69,123,929 kWh/day<br>                         <strong>CO₂ Avoided:</strong> 260,572,617 kg/day<br>                         <strong>ROI:</strong> 3118.4 years                     </p>                 </div>                 </div>`)[0];
+                popup_6196c1b99e4c0cbf2225c5416aa3e325.setContent(html_7abd3fec5efaaf5681694a5718881eff);
+            
+        
+
+        marker_d6c25d06ef8f2635164a91645c3bcd25.bindPopup(popup_6196c1b99e4c0cbf2225c5416aa3e325)
+        ;
+
+        
+    
+    
+            marker_d6c25d06ef8f2635164a91645c3bcd25.bindTooltip(
+                `<div>
+                     Anaerobic Digestion Plant
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d6c25d06ef8f2635164a91645c3bcd25.setIcon(icon_ffc49ff2cbc8df8d59ece073cdc5308e);
+            
+    
+            var marker_3ee70d0ca270ab3071f82203b7b8fafb = L.marker(
+                [23.86326722178098, 51.5383780625784],
+                {
+}
+            ).addTo(map_f1d1c0749f70381141ff9bcfd7f77cd7);
+        
+    
+            var icon_583ec976c2c6fdc68a497266dfa400af = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6e10c89ca22c9eac8728c166fa9543a8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7b6b812d1a8527e021f8c26e0371b573 = $(`<div id="html_7b6b812d1a8527e021f8c26e0371b573" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial; width: 250px'>                     <h4 style='color: green; margin: 0'>                         Anaerobic Digestion Plant #6                     </h4>                     <p style='margin: 5px 0'>                         <strong>Emirate:</strong> Fujairah<br>                         <strong>Energy Output:</strong> 69,123,929 kWh/day<br>                         <strong>CO₂ Avoided:</strong> 260,572,617 kg/day<br>                         <strong>ROI:</strong> 3118.4 years                     </p>                 </div>                 </div>`)[0];
+                popup_6e10c89ca22c9eac8728c166fa9543a8.setContent(html_7b6b812d1a8527e021f8c26e0371b573);
+            
+        
+
+        marker_3ee70d0ca270ab3071f82203b7b8fafb.bindPopup(popup_6e10c89ca22c9eac8728c166fa9543a8)
+        ;
+
+        
+    
+    
+            marker_3ee70d0ca270ab3071f82203b7b8fafb.bindTooltip(
+                `<div>
+                     Anaerobic Digestion Plant
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3ee70d0ca270ab3071f82203b7b8fafb.setIcon(icon_583ec976c2c6fdc68a497266dfa400af);
+            
+    
+            var marker_14479cf5db8226d6229f97ceb90d8a43 = L.marker(
+                [22.7905730017001, 51.888003427365746],
+                {
+}
+            ).addTo(map_f1d1c0749f70381141ff9bcfd7f77cd7);
+        
+    
+            var icon_8011de9fea2197908b0e56af65c12bb9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8ad4cad4ebd4f2a83e705d655b7b12db = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_da38e9eccae9e04f602b4599e9d65aab = $(`<div id="html_da38e9eccae9e04f602b4599e9d65aab" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial; width: 250px'>                     <h4 style='color: green; margin: 0'>                         Anaerobic Digestion Plant #7                     </h4>                     <p style='margin: 5px 0'>                         <strong>Emirate:</strong> Ras Al Khaimah<br>                         <strong>Energy Output:</strong> 69,123,929 kWh/day<br>                         <strong>CO₂ Avoided:</strong> 260,572,617 kg/day<br>                         <strong>ROI:</strong> 3118.4 years                     </p>                 </div>                 </div>`)[0];
+                popup_8ad4cad4ebd4f2a83e705d655b7b12db.setContent(html_da38e9eccae9e04f602b4599e9d65aab);
+            
+        
+
+        marker_14479cf5db8226d6229f97ceb90d8a43.bindPopup(popup_8ad4cad4ebd4f2a83e705d655b7b12db)
+        ;
+
+        
+    
+    
+            marker_14479cf5db8226d6229f97ceb90d8a43.bindTooltip(
+                `<div>
+                     Anaerobic Digestion Plant
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_14479cf5db8226d6229f97ceb90d8a43.setIcon(icon_8011de9fea2197908b0e56af65c12bb9);
+            
+    
+            var marker_045f5e0d5f9ea761900022ef3f44758b = L.marker(
+                [24.197225910561144, 51.60550662814536],
+                {
+}
+            ).addTo(map_f1d1c0749f70381141ff9bcfd7f77cd7);
+        
+    
+            var icon_0ded1a5f1de244e1f28ad77de399d18d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ec3b4ef8acf68d6ae2ac81970b33535 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_566947d37186f4cfe0940756bb4ece3b = $(`<div id="html_566947d37186f4cfe0940756bb4ece3b" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial; width: 250px'>                     <h4 style='color: green; margin: 0'>                         Anaerobic Digestion Plant #8                     </h4>                     <p style='margin: 5px 0'>                         <strong>Emirate:</strong> Fujairah<br>                         <strong>Energy Output:</strong> 69,123,929 kWh/day<br>                         <strong>CO₂ Avoided:</strong> 260,572,617 kg/day<br>                         <strong>ROI:</strong> 3118.4 years                     </p>                 </div>                 </div>`)[0];
+                popup_0ec3b4ef8acf68d6ae2ac81970b33535.setContent(html_566947d37186f4cfe0940756bb4ece3b);
+            
+        
+
+        marker_045f5e0d5f9ea761900022ef3f44758b.bindPopup(popup_0ec3b4ef8acf68d6ae2ac81970b33535)
+        ;
+
+        
+    
+    
+            marker_045f5e0d5f9ea761900022ef3f44758b.bindTooltip(
+                `<div>
+                     Anaerobic Digestion Plant
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_045f5e0d5f9ea761900022ef3f44758b.setIcon(icon_0ded1a5f1de244e1f28ad77de399d18d);
+            
+    
+            var marker_d83240bc5f7a329692a348bbb2cf7f07 = L.marker(
+                [24.37847380459988, 51.535506898236406],
+                {
+}
+            ).addTo(map_f1d1c0749f70381141ff9bcfd7f77cd7);
+        
+    
+            var icon_b81c350a3793683bd5c81c763fc1d533 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5d734eb5dd5ecc4dfeada2e13505c5d8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_21ef150d9793c1940422e9de74c5374c = $(`<div id="html_21ef150d9793c1940422e9de74c5374c" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial; width: 250px'>                     <h4 style='color: blue; margin: 0'>                         Gasification Plant #1                     </h4>                     <p style='margin: 5px 0'>                         <strong>Emirate:</strong> Fujairah<br>                         <strong>Energy Output:</strong> 525,992,044 kWh/day<br>                         <strong>CO₂ Avoided:</strong> 97,623,274 kg/day<br>                         <strong>ROI:</strong> 2766.7 years                     </p>                 </div>                 </div>`)[0];
+                popup_5d734eb5dd5ecc4dfeada2e13505c5d8.setContent(html_21ef150d9793c1940422e9de74c5374c);
+            
+        
+
+        marker_d83240bc5f7a329692a348bbb2cf7f07.bindPopup(popup_5d734eb5dd5ecc4dfeada2e13505c5d8)
+        ;
+
+        
+    
+    
+            marker_d83240bc5f7a329692a348bbb2cf7f07.bindTooltip(
+                `<div>
+                     Gasification Plant
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d83240bc5f7a329692a348bbb2cf7f07.setIcon(icon_b81c350a3793683bd5c81c763fc1d533);
+            
+    
+            var marker_782c20a5c3d5981b9ab4172d9ca65ab1 = L.marker(
+                [24.856336333036165, 52.52650740191701],
+                {
+}
+            ).addTo(map_f1d1c0749f70381141ff9bcfd7f77cd7);
+        
+    
+            var icon_2f1759663c5f297b7a0b328f8dd0d209 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bb3a42912d5c76682de0cb21150fbff4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_24855efdd4f779d683b114fc5dc47c82 = $(`<div id="html_24855efdd4f779d683b114fc5dc47c82" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial; width: 250px'>                     <h4 style='color: blue; margin: 0'>                         Gasification Plant #2                     </h4>                     <p style='margin: 5px 0'>                         <strong>Emirate:</strong> Fujairah<br>                         <strong>Energy Output:</strong> 525,992,044 kWh/day<br>                         <strong>CO₂ Avoided:</strong> 97,623,274 kg/day<br>                         <strong>ROI:</strong> 2766.7 years                     </p>                 </div>                 </div>`)[0];
+                popup_bb3a42912d5c76682de0cb21150fbff4.setContent(html_24855efdd4f779d683b114fc5dc47c82);
+            
+        
+
+        marker_782c20a5c3d5981b9ab4172d9ca65ab1.bindPopup(popup_bb3a42912d5c76682de0cb21150fbff4)
+        ;
+
+        
+    
+    
+            marker_782c20a5c3d5981b9ab4172d9ca65ab1.bindTooltip(
+                `<div>
+                     Gasification Plant
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_782c20a5c3d5981b9ab4172d9ca65ab1.setIcon(icon_2f1759663c5f297b7a0b328f8dd0d209);
+            
+    
+            var marker_56c7b6abd0cecbabdf73b3cee712ab9f = L.marker(
+                [25.4442845559011, 53.489678541470745],
+                {
+}
+            ).addTo(map_f1d1c0749f70381141ff9bcfd7f77cd7);
+        
+    
+            var icon_1b7547bf5e015fd984cec7ae9ab2555e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_449422e9d8af9d50183589e00a14d0f4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_18dc834ddb67fd891b06a6690325c1aa = $(`<div id="html_18dc834ddb67fd891b06a6690325c1aa" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial; width: 250px'>                     <h4 style='color: blue; margin: 0'>                         Gasification Plant #3                     </h4>                     <p style='margin: 5px 0'>                         <strong>Emirate:</strong> Fujairah<br>                         <strong>Energy Output:</strong> 525,992,044 kWh/day<br>                         <strong>CO₂ Avoided:</strong> 97,623,274 kg/day<br>                         <strong>ROI:</strong> 2766.7 years                     </p>                 </div>                 </div>`)[0];
+                popup_449422e9d8af9d50183589e00a14d0f4.setContent(html_18dc834ddb67fd891b06a6690325c1aa);
+            
+        
+
+        marker_56c7b6abd0cecbabdf73b3cee712ab9f.bindPopup(popup_449422e9d8af9d50183589e00a14d0f4)
+        ;
+
+        
+    
+    
+            marker_56c7b6abd0cecbabdf73b3cee712ab9f.bindTooltip(
+                `<div>
+                     Gasification Plant
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_56c7b6abd0cecbabdf73b3cee712ab9f.setIcon(icon_1b7547bf5e015fd984cec7ae9ab2555e);
+            
+    
+            var marker_a4d291e8a9afa785fde4db105a77003e = L.marker(
+                [24.177644797462648, 54.49192791608966],
+                {
+}
+            ).addTo(map_f1d1c0749f70381141ff9bcfd7f77cd7);
+        
+    
+            var icon_0e7b3c5e639f85a99732ae915685c6b3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6e6513ab0938c054fe9054479245860c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_554b79f2f71fecae6d35ce455981283e = $(`<div id="html_554b79f2f71fecae6d35ce455981283e" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial; width: 250px'>                     <h4 style='color: blue; margin: 0'>                         Gasification Plant #4                     </h4>                     <p style='margin: 5px 0'>                         <strong>Emirate:</strong> Abu Dhabi<br>                         <strong>Energy Output:</strong> 525,992,044 kWh/day<br>                         <strong>CO₂ Avoided:</strong> 97,623,274 kg/day<br>                         <strong>ROI:</strong> 2766.7 years                     </p>                 </div>                 </div>`)[0];
+                popup_6e6513ab0938c054fe9054479245860c.setContent(html_554b79f2f71fecae6d35ce455981283e);
+            
+        
+
+        marker_a4d291e8a9afa785fde4db105a77003e.bindPopup(popup_6e6513ab0938c054fe9054479245860c)
+        ;
+
+        
+    
+    
+            marker_a4d291e8a9afa785fde4db105a77003e.bindTooltip(
+                `<div>
+                     Gasification Plant
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a4d291e8a9afa785fde4db105a77003e.setIcon(icon_0e7b3c5e639f85a99732ae915685c6b3);
+            
+    
+            var marker_b881acb9c8d3ba3cc89d6250727e9a41 = L.marker(
+                [24.586752840483808, 55.686927734643476],
+                {
+}
+            ).addTo(map_f1d1c0749f70381141ff9bcfd7f77cd7);
+        
+    
+            var icon_ed1d3105f9d33432b5bbcce3ae86a2a9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f00f9ea8f11c0120d71969d798cc51f9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f6dce4ee9d62051006a30a2257876889 = $(`<div id="html_f6dce4ee9d62051006a30a2257876889" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial; width: 250px'>                     <h4 style='color: blue; margin: 0'>                         Gasification Plant #5                     </h4>                     <p style='margin: 5px 0'>                         <strong>Emirate:</strong> Fujairah<br>                         <strong>Energy Output:</strong> 525,992,044 kWh/day<br>                         <strong>CO₂ Avoided:</strong> 97,623,274 kg/day<br>                         <strong>ROI:</strong> 2766.7 years                     </p>                 </div>                 </div>`)[0];
+                popup_f00f9ea8f11c0120d71969d798cc51f9.setContent(html_f6dce4ee9d62051006a30a2257876889);
+            
+        
+
+        marker_b881acb9c8d3ba3cc89d6250727e9a41.bindPopup(popup_f00f9ea8f11c0120d71969d798cc51f9)
+        ;
+
+        
+    
+    
+            marker_b881acb9c8d3ba3cc89d6250727e9a41.bindTooltip(
+                `<div>
+                     Gasification Plant
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b881acb9c8d3ba3cc89d6250727e9a41.setIcon(icon_ed1d3105f9d33432b5bbcce3ae86a2a9);
+            
+    
+            var marker_fb91f759962a84ec88d0410b83065d26 = L.marker(
+                [24.132698028097902, 56.05302291457921],
+                {
+}
+            ).addTo(map_f1d1c0749f70381141ff9bcfd7f77cd7);
+        
+    
+            var icon_fabdb3f8931dab40aa0d6395eab28ed1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4064e22a213f87f43c38c9f2e0dbdb99 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_20ceb02290b6acb614332ec93e37f832 = $(`<div id="html_20ceb02290b6acb614332ec93e37f832" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial; width: 250px'>                     <h4 style='color: blue; margin: 0'>                         Gasification Plant #6                     </h4>                     <p style='margin: 5px 0'>                         <strong>Emirate:</strong> Fujairah<br>                         <strong>Energy Output:</strong> 525,992,044 kWh/day<br>                         <strong>CO₂ Avoided:</strong> 97,623,274 kg/day<br>                         <strong>ROI:</strong> 2766.7 years                     </p>                 </div>                 </div>`)[0];
+                popup_4064e22a213f87f43c38c9f2e0dbdb99.setContent(html_20ceb02290b6acb614332ec93e37f832);
+            
+        
+
+        marker_fb91f759962a84ec88d0410b83065d26.bindPopup(popup_4064e22a213f87f43c38c9f2e0dbdb99)
+        ;
+
+        
+    
+    
+            marker_fb91f759962a84ec88d0410b83065d26.bindTooltip(
+                `<div>
+                     Gasification Plant
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fb91f759962a84ec88d0410b83065d26.setIcon(icon_fabdb3f8931dab40aa0d6395eab28ed1);
+            
+    
+            var marker_a6df88d8a1ab2ec1ccee8bc7d12a67b0 = L.marker(
+                [24.31146120661617, 52.60071116492272],
+                {
+}
+            ).addTo(map_f1d1c0749f70381141ff9bcfd7f77cd7);
+        
+    
+            var icon_1536916ab88ef04e6d6844b0cf763344 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_815c0fc1c3453521e726ae1157d4f85f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5d4fb9076d0b07d4565c61b1ae972b96 = $(`<div id="html_5d4fb9076d0b07d4565c61b1ae972b96" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial; width: 250px'>                     <h4 style='color: blue; margin: 0'>                         Gasification Plant #7                     </h4>                     <p style='margin: 5px 0'>                         <strong>Emirate:</strong> Fujairah<br>                         <strong>Energy Output:</strong> 525,992,044 kWh/day<br>                         <strong>CO₂ Avoided:</strong> 97,623,274 kg/day<br>                         <strong>ROI:</strong> 2766.7 years                     </p>                 </div>                 </div>`)[0];
+                popup_815c0fc1c3453521e726ae1157d4f85f.setContent(html_5d4fb9076d0b07d4565c61b1ae972b96);
+            
+        
+
+        marker_a6df88d8a1ab2ec1ccee8bc7d12a67b0.bindPopup(popup_815c0fc1c3453521e726ae1157d4f85f)
+        ;
+
+        
+    
+    
+            marker_a6df88d8a1ab2ec1ccee8bc7d12a67b0.bindTooltip(
+                `<div>
+                     Gasification Plant
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a6df88d8a1ab2ec1ccee8bc7d12a67b0.setIcon(icon_1536916ab88ef04e6d6844b0cf763344);
+            
+    
+            var marker_4c031cf10525906ae1a0fffd1881b1f6 = L.marker(
+                [24.502726168277142, 55.418577145936055],
+                {
+}
+            ).addTo(map_f1d1c0749f70381141ff9bcfd7f77cd7);
+        
+    
+            var icon_bbb6005543b3f0b0a6952327679c6b6c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "industry",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c6e405c11d22ac274660251ea8122f0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_989d13c77f7d609199aff728afbbf178 = $(`<div id="html_989d13c77f7d609199aff728afbbf178" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial; width: 250px'>                     <h4 style='color: blue; margin: 0'>                         Gasification Plant #8                     </h4>                     <p style='margin: 5px 0'>                         <strong>Emirate:</strong> Fujairah<br>                         <strong>Energy Output:</strong> 525,992,044 kWh/day<br>                         <strong>CO₂ Avoided:</strong> 97,623,274 kg/day<br>                         <strong>ROI:</strong> 2766.7 years                     </p>                 </div>                 </div>`)[0];
+                popup_3c6e405c11d22ac274660251ea8122f0.setContent(html_989d13c77f7d609199aff728afbbf178);
+            
+        
+
+        marker_4c031cf10525906ae1a0fffd1881b1f6.bindPopup(popup_3c6e405c11d22ac274660251ea8122f0)
+        ;
+
+        
+    
+    
+            marker_4c031cf10525906ae1a0fffd1881b1f6.bindTooltip(
+                `<div>
+                     Gasification Plant
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4c031cf10525906ae1a0fffd1881b1f6.setIcon(icon_bbb6005543b3f0b0a6952327679c6b6c);
+            
+</script>
+</html>

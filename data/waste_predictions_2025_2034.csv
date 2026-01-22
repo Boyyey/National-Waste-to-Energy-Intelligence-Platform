@@ -1,0 +1,71 @@
+year,emirate,predicted_waste_tons_per_day,predicted_waste_tons_per_year,model_used,model_mae
+2025,Abu Dhabi,12100,4416500,growth_model,150
+2025,Dubai,16800,6132000,growth_model,200
+2025,Sharjah,4700,1715500,growth_model,100
+2025,Ajman,1250,456250,growth_model,50
+2025,Ras Al Khaimah,1550,565750,growth_model,60
+2025,Fujairah,950,346750,growth_model,40
+2025,Umm Al Quwain,850,310250,growth_model,30
+2026,Abu Dhabi,12848,4689520,growth_model,150
+2026,Dubai,17952,6552480,growth_model,200
+2026,Sharjah,5023,1833395,growth_model,100
+2026,Ajman,1338,488370,growth_model,50
+2026,Ras Al Khaimah,1659,605535,growth_model,60
+2026,Fujairah,1017,371205,growth_model,40
+2026,Umm Al Quwain,910,332150,growth_model,30
+2027,Abu Dhabi,13645,4980425,growth_model,150
+2027,Dubai,19107,6974055,growth_model,200
+2027,Sharjah,5365,1958225,growth_model,100
+2027,Ajman,1431,522315,growth_model,50
+2027,Ras Al Khaimah,1775,647875,growth_model,60
+2027,Fujairah,1088,397120,growth_model,40
+2027,Umm Al Quwain,973,355145,growth_model,30
+2028,Abu Dhabi,14482,5285930,growth_model,150
+2028,Dubai,20334,7421910,growth_model,200
+2028,Sharjah,5720,2085800,growth_model,100
+2028,Ajman,1529,558085,growth_model,50
+2028,Ras Al Khaimah,1897,692405,growth_model,60
+2028,Fujairah,1164,424860,growth_model,40
+2028,Umm Al Quwain,1040,379600,growth_model,30
+2029,Abu Dhabi,15343,5600195,growth_model,150
+2029,Dubai,21655,7904075,growth_model,200
+2029,Sharjah,6101,2226865,growth_model,100
+2029,Ajman,1636,597140,growth_model,50
+2029,Ras Al Khaimah,2026,739490,growth_model,60
+2029,Fujairah,1245,454425,growth_model,40
+2029,Umm Al Quwain,1113,406245,growth_model,30
+2030,Abu Dhabi,16264,5936360,growth_model,150
+2030,Dubai,23016,8400840,growth_model,200
+2030,Sharjah,6508,2375420,growth_model,100
+2030,Ajman,1750,638750,growth_model,50
+2030,Ras Al Khaimah,2168,791320,growth_model,60
+2030,Fujairah,1332,486180,growth_model,40
+2030,Umm Al Quwain,1191,434715,growth_model,30
+2031,Abu Dhabi,17240,6302600,growth_model,150
+2031,Dubai,24427,8915855,growth_model,200
+2031,Sharjah,6943,2534195,growth_model,100
+2031,Ajman,1875,684375,growth_model,50
+2031,Ras Al Khaimah,2320,846800,growth_model,60
+2031,Fujairah,1425,520125,growth_model,40
+2031,Umm Al Quwain,1274,465010,growth_model,30
+2032,Abu Dhabi,18274,6690010,growth_model,150
+2032,Dubai,25813,9421745,growth_model,200
+2032,Sharjah,7408,2703920,growth_model,100
+2032,Ajman,2006,732190,growth_model,50
+2032,Ras Al Khaimah,2481,905565,growth_model,60
+2032,Fujairah,1523,555895,growth_model,40
+2032,Umm Al Quwain,1363,497495,growth_model,30
+2033,Abu Dhabi,19331,7055785,growth_model,150
+2033,Dubai,27333,9976545,growth_model,200
+2033,Sharjah,7906,2885690,growth_model,100
+2033,Ajman,2146,782090,growth_model,50
+2033,Ras Al Khaimah,2653,968345,growth_model,60
+2033,Fujairah,1629,594585,growth_model,40
+2033,Umm Al Quwain,1460,532900,growth_model,30
+2034,Abu Dhabi,20471,7471915,growth_model,150
+2034,Dubai,28993,10582445,growth_model,200
+2034,Sharjah,8438,3079870,growth_model,100
+2034,Ajman,2296,838040,growth_model,50
+2034,Ras Al Khaimah,2834,1034100,growth_model,60
+2034,Fujairah,1742,635830,growth_model,40
+2034,Umm Al Quwain,1564,570860,growth_model,30
